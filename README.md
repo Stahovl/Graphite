@@ -1,2 +1,2 @@
-Documentation: http:/https://github.com/Stahovl/Graphite
+Documentation: https://github.com/Stahovl/Graphite
 
