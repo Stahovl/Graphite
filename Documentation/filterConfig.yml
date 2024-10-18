@@ -1,6 +1,6 @@
 apiRules:
 - include:
-    uidRegex: ^DocFxForUnity
+    uidRegex: ^Graphite
     type: Namespace
 - include:
     uidRegex: ^Global
