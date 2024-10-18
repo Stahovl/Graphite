@@ -62,7 +62,7 @@
             }
         ],
         "sitemap": {
-            "baseUrl": "https://normanderwan.github.io/DocFxForUnity",
+            "baseUrl": "https://Stahovl.github.io/Graphite",
             "changefreq": "weekly",
             "fileOptions": {
                 "api/*": {
@@ -71,7 +71,7 @@
             }
         },
         "xref": [
-            "https://normanderwan.github.io/UnityXrefMaps/xrefmap.yml"
+            "https://Stahovl.github.io/UnityXrefMaps/xrefmap.yml"
         ],
         "xrefService": [
             "https://xref.docs.microsoft.com/query?uid={uid}"
