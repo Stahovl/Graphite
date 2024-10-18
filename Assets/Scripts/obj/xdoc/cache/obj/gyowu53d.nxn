@@ -1,0 +1,88 @@
+id: cs.temp.dll
+language: CSharp
+name:
+  Default: cs.temp.dll
+qualifiedName:
+  Default: cs.temp.dll
+type: Assembly
+modifiers: {}
+items:
+- id: Global
+  language: CSharp
+  name:
+    CSharp: Global
+    VB: ''
+  nameWithType:
+    CSharp: Global
+    VB: ''
+  qualifiedName:
+    CSharp: Global
+    VB: ''
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+  modifiers: {}
+  items:
+  - id: Global.HandleInput
+    commentId: T:Global.HandleInput
+    language: CSharp
+    name:
+      CSharp: HandleInput
+      VB: HandleInput
+    nameWithType:
+      CSharp: HandleInput
+      VB: HandleInput
+    qualifiedName:
+      CSharp: HandleInput
+      VB: HandleInput
+    type: Class
+    assemblies:
+    - cs.temp.dll
+    namespace: Global
+    source:
+      id: HandleInput
+      path: ''
+      startLine: 2
+    syntax:
+      content:
+        CSharp: 'public class HandleInput : MonoBehaviour'
+        VB: >-
+          Public Class HandleInput
+
+              Inherits MonoBehaviour
+    inheritance:
+    - System.Object
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items: []
+references:
+  Global.HandleInput:
+    name:
+      CSharp:
+      - id: Global.HandleInput
+        name: HandleInput
+        nameWithType: HandleInput
+        qualifiedName: HandleInput
+      VB:
+      - id: Global.HandleInput
+        name: HandleInput
+        nameWithType: HandleInput
+        qualifiedName: HandleInput
+    isDefinition: true
+    commentId: T:Global.HandleInput
+  Global:
+    name:
+      CSharp:
+      - name: Global
+        nameWithType: Global
+        qualifiedName: Global
+      VB:
+      - name: ''
+        nameWithType: ''
+        qualifiedName: ''
+    isDefinition: true
