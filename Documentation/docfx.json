@@ -71,7 +71,7 @@
             }
         },
         "xref": [
-            "https://Stahovl.github.io/Graphite/xrefmap.yml"
+            "https://normanderwan.github.io/UnityXrefMaps/xrefmap.yml"
         ],
         "xrefService": [
             "https://xref.docs.microsoft.com/query?uid={uid}"
