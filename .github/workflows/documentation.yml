@@ -19,18 +19,18 @@ jobs:
         run: choco install -y docfx
 
       - name: Use README.md as index.md
-        run: cp README.md Documentation/index.md
+        run: cp README.md docs/index.md
 
       - name: Create .nojekyll file
-        run: echo "" > Documentation/_site/.nojekyll
+        run: echo "" > docs/_site/.nojekyll
 
     # List deployed files to confirm .nojekyll exists
       - name: List deployed files
-        run: ls -la Documentation/_site
+        run: ls -la docs/_site
 
 
       - name: Build
-        run: docfx Documentation/docfx.json
+        run: docfx docs/docfx.json
 
 
       # Upload the generated documentation
