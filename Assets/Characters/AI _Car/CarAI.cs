@@ -1,102 +1,95 @@
 using UnityEngine;
-using Unity.MLAgents;
-using Unity.MLAgents.Sensors;
-using Unity.MLAgents.Actuators;
+using UnityEngine.UIElements;
 
-public class CarAI : Agent
+public class CarAI : MonoBehaviour
 {
     public Car _car; // Ссылка на скрипт управления машинкой
-    public float rayDistance = 10f; // Дальность лучей
-    public int numRays = 36; // Количество лучей
+    public float angleStep = 100f;
+    public float rayDistance = 100f; // Дистанция выпускаемых лучей
+    public int rayCount = 15; // Количество выпускаемых лучей
+    public LayerMask obstacleLayer; // Слой препятствий для проверки
+    public float avoidWeight = 3f; // Вес направления для избежания препятствий
+    public bool visualizeRays = true; // Визуализировать ли лучи
 
-    private void FixedUpdate()
-    {
-        // Получаем входные данные
-        Vector2[] inputData = DetectObjects();
-
-        // Обрабатываем входные данные и получаем движение
-        Vector2 movement = ProcessInputData(inputData);
-
-        // Двигаем машинку
-        move(movement.y, movement.x);
-    }
-
-    private Vector2[] DetectObjects()
-    {
-        Vector2[] inputData = new Vector2[numRays];
-        float angleStep = 360f / numRays;
-
-        for (int i = 0; i < numRays; i++)
-        {
-            float angle = i * angleStep;
-            Quaternion rotation = Quaternion.Euler(0, angle, 0);
-            Vector3 direction = rotation * transform.forward;
-
-            RaycastHit hit;
-            if (Physics.Raycast(transform.position, direction, out hit, rayDistance))
-            {
-                PriorityObject priorityObject = hit.collider.GetComponent<PriorityObject>();
-                if (priorityObject != null)
-                {
-                    float priority = priorityObject.priority; // -1 или 1
-                    float distance = hit.distance;
-
-                    inputData[i] = new Vector2(priority, distance);
-                }
-                else
-                {
-                    inputData[i] = new Vector2(0, rayDistance);
-                }
-            }
-            else
-            {
-                inputData[i] = new Vector2(0, rayDistance);
-            }
-        }
-
-        return inputData;
-    }
-
-    private Vector2 ProcessInputData(Vector2[] inputData)
-    {
-        Vector3 moveDirection = Vector3.zero;
-        float angleStep = 360f / numRays;
-
-        for (int i = 0; i < numRays; i++)
-        {
-            float priority = inputData[i].x;
-            float distance = inputData[i].y;
-
-            float angle = i * angleStep;
-            Quaternion rotation = Quaternion.Euler(0, angle, 0);
-            Vector3 direction = rotation * Vector3.forward;
-
-            // Вычисляем вес на основе приоритета и расстояния
-            float weight = priority / Mathf.Max(distance, 0.1f);
-
-            // Аккумулируем направление движения
-            moveDirection += direction * weight;
-        }
-
-        // Нормализуем направление движения
-        if (moveDirection != Vector3.zero)
-            moveDirection.Normalize();
-
-        // Преобразуем мировое направление в локальное
-        Vector3 localMoveDirection = transform.InverseTransformDirection(moveDirection);
-
-        // Извлекаем движение вперед и поворот
-        float moveInput = localMoveDirection.z; // Движение вперед
-        float turnInput = localMoveDirection.x; // Поворот
-
-        return new Vector2(turnInput, moveInput);
-    }
-
+    private float accelerate = 0f;
     private void move(float moveInput, float turnInput)
     {
         // _car.direction.z отвечает за движение вперед/назад
-        // _car.direction.x отвечает за поворот
+        // а _car.direction.x отвечает за поворот
         _car.direction.z = moveInput;
         _car.direction.x = turnInput;
+    }
+
+    private Vector3 CalculateAvoidance()
+    {
+        accelerate *= 0f;
+
+        Vector3 averageDirection = Vector3.zero; // Для накопления всех векторов
+
+        // Половина угла, чтобы распределить лучи симметрично от -45 до 45 градусов
+        float halfAngle = angleStep / 2f;
+        // Шаг угла между лучами
+        float angle = angleStep / (rayCount - 1);
+
+        for (int i = 0; i < rayCount; i++)
+        {
+            // Вычисляем угол для текущего луча
+            float currentAngle = -halfAngle + (i * angle);
+            // Преобразуем угол в направление в мировом пространстве
+            Vector3 rayDirection = _car.targetRotation * (Quaternion.Euler(0, currentAngle, 0) * Vector3.forward);
+
+            // Выпускаем луч
+            Ray ray = new Ray(_car.transform.position, rayDirection);
+            RaycastHit hit;
+
+            // Проверяем столкновение луча с препятствием
+            if (Physics.Raycast(ray, out hit, rayDistance, obstacleLayer))
+            {
+                // Если луч столкнулся с препятствием, уменьшаем длину вектора
+                float distanceFactor = hit.distance / rayDistance;
+                PriorityObject priorityObject;
+                float value = hit.transform.gameObject.TryGetComponent<PriorityObject>(out priorityObject) ? avoidWeight+priorityObject.priority : avoidWeight;
+                Vector3 avoidanceDirection = rayDirection * distanceFactor * value;
+
+                // Накопление этого вектора
+                averageDirection += avoidanceDirection;
+
+                // Визуализация луча с цветом, зависящим от расстояния
+                if (visualizeRays)
+                {
+                    Debug.DrawRay(_car.transform.position, rayDirection * hit.distance, Color.Lerp(Color.red, Color.green, distanceFactor));
+                }
+                if(Random.Range(0f, 1f)>0.75f) accelerate += hit.transform.gameObject.TryGetComponent<Car>(out var aponent) ? Random.Range(0f, 0.05f) : 0f;
+            }
+            else
+            {
+                // Если препятствий нет, луч идет на максимальное расстояние
+                averageDirection += rayDirection;
+
+                // Визуализация луча с зеленым цветом (без препятствий)
+                if (visualizeRays)
+                {
+                    Debug.DrawRay(_car.transform.position, rayDirection * rayDistance, Color.green);
+                }
+            }
+        }
+        averageDirection /= rayCount;
+
+        averageDirection.Normalize();
+
+        Debug.DrawRay(_car.transform.position, averageDirection*5, Color.blue);
+        // Возвращаем нормализованное среднее направление
+        return averageDirection;
+    }
+
+    private void Update()
+    {
+        // Вычисляем направление для избежания препятствий
+        Vector3 avoidanceDirection = CalculateAvoidance();
+
+        // Например, можем передать это направление в функцию движения
+        float turnInput = Vector3.SignedAngle(_car.transform.forward, avoidanceDirection, Vector3.up); // Поворот в зависимости от направления
+
+        move(1f + accelerate, turnInput);
     }
 }
