@@ -62,7 +62,7 @@
             }
         ],
         "sitemap": {
-            "baseUrl": "https://Stahovl.github.io/Graphite",
+            "baseUrl": "https://stahovl.github.io/Graphite",
             "changefreq": "weekly",
             "fileOptions": {
                 "api/*": {
@@ -71,7 +71,7 @@
             }
         },
         "xref": [
-            "https://Stahovl.github.io/UnityXrefMaps/xrefmap.yml"
+            "https://stahovl.github.io/UnityXrefMaps/xrefmap.yml"
         ],
         "xrefService": [
             "https://xref.docs.microsoft.com/query?uid={uid}"
