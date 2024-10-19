@@ -8,10 +8,10 @@ public class CarAI : MonoBehaviour
     public float rayDistance = 100f; // Дистанция выпускаемых лучей
     public int rayCount = 15; // Количество выпускаемых лучей
     public LayerMask obstacleLayer; // Слой препятствий для проверки
-    public float avoidWeight = 0.5f; // Вес направления для избежания препятствий
+    public float avoidWeight = 0.25f; // Вес направления для избежания препятствий
     public bool visualizeRays = true; // Визуализировать ли лучи
 
-    public float HeightRay = 0.25f;
+    public float HeightRay = 0f;
     public float overtakeDesire = 0.5f;
     private float accelerate = 0f;
     private void move(float moveInput, float turnInput)
@@ -93,6 +93,6 @@ public class CarAI : MonoBehaviour
         // Например, можем передать это направление в функцию движения
         float turnInput = Vector3.SignedAngle(_car.transform.forward, avoidanceDirection, Vector3.up); // Поворот в зависимости от направления
 
-        move(Random.Range(0.9f, 1f) + accelerate, Mathf.Clamp(turnInput,-1.5f,1.5f));
+        move(Random.Range(0.9f, 1f) + accelerate, Mathf.Clamp(turnInput,-1f,1f));
     }
 }
