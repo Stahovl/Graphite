@@ -5,7 +5,7 @@ public class Car : Orientation
 {
     [Header("Parameters")]
     public float baseMoveSpeed = 30f; // Базовая скорость движения
-    public float baseRotationSpeed = 30f; // Базовая скорость поворота
+    public float baseRotationSpeed = 1.5f; // Базовая скорость поворота
     public Vector3 direction;
 
     private void Start()
@@ -29,13 +29,8 @@ public class Car : Orientation
             _rb.linearVelocity = vProj;
 
             // Поворачиваем машину, только если она движется вперёд или назад
-            if (direction.z != 0)
-            {
-                // Умножаем скорость поворота на текущую скорость движения
-                float currentRotationSpeed = baseRotationSpeed * Mathf.Abs(direction.z);
-                float rotationAmount = direction.x * baseRotationSpeed * Time.deltaTime;
-                transform.Rotate(0, rotationAmount, 0);
-            }
+            float rotationAmount = direction.x * Mathf.Min(_rb.linearVelocity.magnitude, 1f) * baseRotationSpeed;
+            transform.Rotate(0, rotationAmount, 0);
         }
     }
 }
