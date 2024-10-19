@@ -109,15 +109,15 @@ public class CarAI : MonoBehaviour
         switch (difficult)
         {
             case 0:
-                _rayCount = 9;
+                _rayCount = 15;
                 _overtakeDesire = 0.25f;
                 break;
             case 1:
-                _rayCount = 15;
+                _rayCount = 25;
                 _overtakeDesire = 0.5f;
                 break;
             case 2:
-                _rayCount = 25;
+                _rayCount = 32;
                 _overtakeDesire = 0.75f;
                 break;
         }
