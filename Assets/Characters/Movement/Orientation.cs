@@ -8,10 +8,7 @@ public class Orientation : MonoBehaviour
     private Dictionary<Collider, List<Vector3>> collisionNormals = new Dictionary<Collider, List<Vector3>>();
     protected Rigidbody _rb;
     protected Vector3 collisionNormal;
-    /// <summary>
-    ///  ривизна поверхности(нормаль поверхности)
-    /// </summary>
-    protected Quaternion targetRotation; 
+    public Quaternion targetRotation;
 
 
 
@@ -29,7 +26,7 @@ public class Orientation : MonoBehaviour
     }
     public bool RotateInAir = true;
     public float SlipAngle = 0.5f;
-    public float LerpNormalGravity = 0.75f;
+    public float LerpNormalGravity = 0.0f;
 
     private void Awake()
     {

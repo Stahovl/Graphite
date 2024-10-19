@@ -4,8 +4,8 @@
 public class Car : Orientation
 {
     [Header("Parameters")]
-    public float moveSpeed = 5f;
-    public float rotationSpeed = 100f; // Rotation speed factor
+    public float baseMoveSpeed = 30f; // Базовая скорость движения
+    public float baseRotationSpeed = 30f; // Базовая скорость поворота
     public Vector3 direction;
 
     private void Start()
@@ -17,20 +17,25 @@ public class Car : Orientation
     {
         Vector3 surfaceNormal = targetRotation * Vector3.up;
 
-        // Calculate the projected velocity
-        Vector3 vProj = (targetRotation * new Vector3(0,0, direction.z) * moveSpeed) + Vector3.Project(_rb.linearVelocity, surfaceNormal);
+        // Вычисляем текущую скорость автомобиля на основе базовой скорости
+        float currentMoveSpeed = baseMoveSpeed * direction.z;
+
+        // Проецируем скорость на поверхность
+        Vector3 vProj = (targetRotation * new Vector3(0, 0, currentMoveSpeed)) + Vector3.Project(_rb.linearVelocity, surfaceNormal);
 
         if (isGrounded())
         {
+            //_rb.linearVelocity += vProj * (baseMoveSpeed - _rb.linearVelocity.magnitude) * Time.deltaTime;
             _rb.linearVelocity = vProj;
 
-            // Rotate the car only when moving forward
-            if (direction.z > 0)
+            // Поворачиваем машину, только если она движется вперёд или назад
+            if (direction.z != 0)
             {
-                float rotationAmount = direction.x * rotationSpeed * Time.deltaTime;
+                // Умножаем скорость поворота на текущую скорость движения
+                float currentRotationSpeed = baseRotationSpeed * Mathf.Abs(direction.z);
+                float rotationAmount = direction.x * baseRotationSpeed * Time.deltaTime;
                 transform.Rotate(0, rotationAmount, 0);
             }
         }
-
     }
 }
