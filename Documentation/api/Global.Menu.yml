@@ -1,0 +1,42 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Menu
+  commentId: T:Global.Menu
+  id: Menu
+  parent: Global
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: Menu
+  nameWithType: Menu
+  fullName: Menu
+  type: Class
+  source:
+    id: Menu
+    path: ''
+    startLine: 411
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: 'public class Menu : MonoBehaviour'
+    content.vb: >-
+      Public Class Menu
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+references:
+- uid: Global
+  name: Global
+  nameWithType: Global
+  fullName: Global
+  nameWithType.vb: ''
+  fullName.vb: ''
+  name.vb: ''

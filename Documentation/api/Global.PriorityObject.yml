@@ -5,7 +5,7 @@ items:
   id: PriorityObject
   parent: Global
   children:
-  - Global.PriorityObject.priority
+  - Global.PriorityObject.Priority
   langs:
   - csharp
   - vb
@@ -16,7 +16,7 @@ items:
   source:
     id: PriorityObject
     path: ''
-    startLine: 70
+    startLine: 20
   assemblies:
   - cs.temp.dll
   namespace: Global
@@ -33,29 +33,29 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Global.PriorityObject.priority
-  commentId: F:Global.PriorityObject.priority
-  id: priority
+- uid: Global.PriorityObject.Priority
+  commentId: F:Global.PriorityObject.Priority
+  id: Priority
   parent: Global.PriorityObject
   langs:
   - csharp
   - vb
-  name: priority
-  nameWithType: PriorityObject.priority
-  fullName: PriorityObject.priority
+  name: Priority
+  nameWithType: PriorityObject.Priority
+  fullName: PriorityObject.Priority
   type: Field
   source:
-    id: priority
+    id: Priority
     path: ''
-    startLine: 73
+    startLine: 22
   assemblies:
   - cs.temp.dll
   namespace: Global
   syntax:
-    content: public float priority
+    content: public float Priority
     return:
       type: System.Single
-    content.vb: Public priority As Single
+    content.vb: Public Priority As Single
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -68,19 +68,6 @@ references:
   nameWithType.vb: ''
   fullName.vb: ''
   name.vb: ''
-- uid: System.Object
-  commentId: T:System.Object
-  parent: System
-  isExternal: true
-  name: Object
-  nameWithType: Object
-  fullName: System.Object
-- uid: System
-  commentId: N:System
-  isExternal: true
-  name: System
-  nameWithType: System
-  fullName: System
 - uid: System.Single
   commentId: T:System.Single
   parent: System
@@ -88,3 +75,9 @@ references:
   name: Single
   nameWithType: Single
   fullName: System.Single
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

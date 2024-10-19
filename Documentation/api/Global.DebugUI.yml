@@ -1,0 +1,42 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.DebugUI
+  commentId: T:Global.DebugUI
+  id: DebugUI
+  parent: Global
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: DebugUI
+  nameWithType: DebugUI
+  fullName: DebugUI
+  type: Class
+  source:
+    id: DebugUI
+    path: ''
+    startLine: 368
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: 'public class DebugUI : MonoBehaviour'
+    content.vb: >-
+      Public Class DebugUI
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+references:
+- uid: Global
+  name: Global
+  nameWithType: Global
+  fullName: Global
+  nameWithType.vb: ''
+  fullName.vb: ''
+  name.vb: ''

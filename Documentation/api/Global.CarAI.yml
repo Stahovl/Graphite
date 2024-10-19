@@ -5,16 +5,7 @@ items:
   id: CarAI
   parent: Global
   children:
-  - Global.CarAI.car
-  - Global.CarAI.checkpointReward
-  - Global.CarAI.CollectObservations(VectorSensor)
-  - Global.CarAI.collisionPenalty
-  - Global.CarAI.Heuristic(ActionBuffers@)
-  - Global.CarAI.nextCheckpoint
-  - Global.CarAI.numRays
-  - Global.CarAI.OnActionReceived(ActionBuffers)
-  - Global.CarAI.OnEpisodeBegin
-  - Global.CarAI.rayDistance
+  - Global.CarAI.SetDifficulty(System.Int32)
   langs:
   - csharp
   - vb
@@ -25,15 +16,15 @@ items:
   source:
     id: CarAI
     path: ''
-    startLine: 82
+    startLine: 77
   assemblies:
   - cs.temp.dll
   namespace: Global
   syntax:
-    content: 'public class CarAI : Agent'
+    content: 'public class CarAI : MonoBehaviour'
     content.vb: >-
       Public Class CarAI
-          Inherits Agent
+          Inherits MonoBehaviour
   inheritance:
   - System.Object
   modifiers.csharp:
@@ -42,292 +33,35 @@ items:
   modifiers.vb:
   - Public
   - Class
-- uid: Global.CarAI.car
-  commentId: F:Global.CarAI.car
-  id: car
+- uid: Global.CarAI.SetDifficulty(System.Int32)
+  commentId: M:Global.CarAI.SetDifficulty(System.Int32)
+  id: SetDifficulty(System.Int32)
   parent: Global.CarAI
   langs:
   - csharp
   - vb
-  name: car
-  nameWithType: CarAI.car
-  fullName: CarAI.car
-  type: Field
+  name: SetDifficulty(Int32)
+  nameWithType: CarAI.SetDifficulty(Int32)
+  fullName: CarAI.SetDifficulty(System.Int32)
+  type: Method
   source:
-    id: car
+    id: SetDifficulty
     path: ''
-    startLine: 84
+    startLine: 181
   assemblies:
   - cs.temp.dll
   namespace: Global
   syntax:
-    content: public Car car
-    return:
-      type: Global.Car
-    content.vb: Public car As Car
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: Global.CarAI.rayDistance
-  commentId: F:Global.CarAI.rayDistance
-  id: rayDistance
-  parent: Global.CarAI
-  langs:
-  - csharp
-  - vb
-  name: rayDistance
-  nameWithType: CarAI.rayDistance
-  fullName: CarAI.rayDistance
-  type: Field
-  source:
-    id: rayDistance
-    path: ''
-    startLine: 85
-  assemblies:
-  - cs.temp.dll
-  namespace: Global
-  syntax:
-    content: public float rayDistance
-    return:
-      type: System.Single
-    content.vb: Public rayDistance As Single
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: Global.CarAI.numRays
-  commentId: F:Global.CarAI.numRays
-  id: numRays
-  parent: Global.CarAI
-  langs:
-  - csharp
-  - vb
-  name: numRays
-  nameWithType: CarAI.numRays
-  fullName: CarAI.numRays
-  type: Field
-  source:
-    id: numRays
-    path: ''
-    startLine: 86
-  assemblies:
-  - cs.temp.dll
-  namespace: Global
-  syntax:
-    content: public int numRays
-    return:
+    content: public void SetDifficulty(int difficult)
+    parameters:
+    - id: difficult
       type: System.Int32
-    content.vb: Public numRays As Integer
+    content.vb: Public Sub SetDifficulty(difficult As Integer)
+  overload: Global.CarAI.SetDifficulty*
   modifiers.csharp:
   - public
   modifiers.vb:
   - Public
-- uid: Global.CarAI.nextCheckpoint
-  commentId: F:Global.CarAI.nextCheckpoint
-  id: nextCheckpoint
-  parent: Global.CarAI
-  langs:
-  - csharp
-  - vb
-  name: nextCheckpoint
-  nameWithType: CarAI.nextCheckpoint
-  fullName: CarAI.nextCheckpoint
-  type: Field
-  source:
-    id: nextCheckpoint
-    path: ''
-    startLine: 87
-  assemblies:
-  - cs.temp.dll
-  namespace: Global
-  syntax:
-    content: public Transform nextCheckpoint
-    return:
-      type: Global.Transform
-    content.vb: Public nextCheckpoint As Transform
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: Global.CarAI.checkpointReward
-  commentId: F:Global.CarAI.checkpointReward
-  id: checkpointReward
-  parent: Global.CarAI
-  langs:
-  - csharp
-  - vb
-  name: checkpointReward
-  nameWithType: CarAI.checkpointReward
-  fullName: CarAI.checkpointReward
-  type: Field
-  source:
-    id: checkpointReward
-    path: ''
-    startLine: 88
-  assemblies:
-  - cs.temp.dll
-  namespace: Global
-  syntax:
-    content: public float checkpointReward
-    return:
-      type: System.Single
-    content.vb: Public checkpointReward As Single
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: Global.CarAI.collisionPenalty
-  commentId: F:Global.CarAI.collisionPenalty
-  id: collisionPenalty
-  parent: Global.CarAI
-  langs:
-  - csharp
-  - vb
-  name: collisionPenalty
-  nameWithType: CarAI.collisionPenalty
-  fullName: CarAI.collisionPenalty
-  type: Field
-  source:
-    id: collisionPenalty
-    path: ''
-    startLine: 89
-  assemblies:
-  - cs.temp.dll
-  namespace: Global
-  syntax:
-    content: public float collisionPenalty
-    return:
-      type: System.Single
-    content.vb: Public collisionPenalty As Single
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: Global.CarAI.OnEpisodeBegin
-  commentId: M:Global.CarAI.OnEpisodeBegin
-  id: OnEpisodeBegin
-  parent: Global.CarAI
-  langs:
-  - csharp
-  - vb
-  name: OnEpisodeBegin()
-  nameWithType: CarAI.OnEpisodeBegin()
-  fullName: CarAI.OnEpisodeBegin()
-  type: Method
-  source:
-    id: OnEpisodeBegin
-    path: ''
-    startLine: 91
-  assemblies:
-  - cs.temp.dll
-  namespace: Global
-  syntax:
-    content: public override void OnEpisodeBegin()
-    content.vb: Public Overrides Sub OnEpisodeBegin
-  overload: Global.CarAI.OnEpisodeBegin*
-  modifiers.csharp:
-  - public
-  - override
-  modifiers.vb:
-  - Public
-  - Overrides
-- uid: Global.CarAI.CollectObservations(VectorSensor)
-  commentId: M:Global.CarAI.CollectObservations(VectorSensor)
-  id: CollectObservations(VectorSensor)
-  parent: Global.CarAI
-  langs:
-  - csharp
-  - vb
-  name: CollectObservations(VectorSensor)
-  nameWithType: CarAI.CollectObservations(VectorSensor)
-  fullName: CarAI.CollectObservations(VectorSensor)
-  type: Method
-  source:
-    id: CollectObservations
-    path: ''
-    startLine: 96
-  assemblies:
-  - cs.temp.dll
-  namespace: Global
-  syntax:
-    content: public override void CollectObservations(VectorSensor sensor)
-    parameters:
-    - id: sensor
-      type: Global.VectorSensor
-    content.vb: Public Overrides Sub CollectObservations(sensor As VectorSensor)
-  overload: Global.CarAI.CollectObservations*
-  modifiers.csharp:
-  - public
-  - override
-  modifiers.vb:
-  - Public
-  - Overrides
-- uid: Global.CarAI.OnActionReceived(ActionBuffers)
-  commentId: M:Global.CarAI.OnActionReceived(ActionBuffers)
-  id: OnActionReceived(ActionBuffers)
-  parent: Global.CarAI
-  langs:
-  - csharp
-  - vb
-  name: OnActionReceived(ActionBuffers)
-  nameWithType: CarAI.OnActionReceived(ActionBuffers)
-  fullName: CarAI.OnActionReceived(ActionBuffers)
-  type: Method
-  source:
-    id: OnActionReceived
-    path: ''
-    startLine: 134
-  assemblies:
-  - cs.temp.dll
-  namespace: Global
-  syntax:
-    content: public override void OnActionReceived(ActionBuffers actions)
-    parameters:
-    - id: actions
-      type: Global.ActionBuffers
-    content.vb: Public Overrides Sub OnActionReceived(actions As ActionBuffers)
-  overload: Global.CarAI.OnActionReceived*
-  modifiers.csharp:
-  - public
-  - override
-  modifiers.vb:
-  - Public
-  - Overrides
-- uid: Global.CarAI.Heuristic(ActionBuffers@)
-  commentId: M:Global.CarAI.Heuristic(ActionBuffers@)
-  id: Heuristic(ActionBuffers@)
-  parent: Global.CarAI
-  langs:
-  - csharp
-  - vb
-  name: Heuristic(in ActionBuffers)
-  nameWithType: CarAI.Heuristic(in ActionBuffers)
-  fullName: CarAI.Heuristic(in ActionBuffers)
-  type: Method
-  source:
-    id: Heuristic
-    path: ''
-    startLine: 144
-  assemblies:
-  - cs.temp.dll
-  namespace: Global
-  syntax:
-    content: public override void Heuristic(in ActionBuffers actionsOut)
-    parameters:
-    - id: actionsOut
-      type: Global.ActionBuffers
-    content.vb: Public Overrides Sub Heuristic(ByRef actionsOut As ActionBuffers)
-  overload: Global.CarAI.Heuristic*
-  nameWithType.vb: CarAI.Heuristic(ByRef ActionBuffers)
-  modifiers.csharp:
-  - public
-  - override
-  modifiers.vb:
-  - Public
-  - Overrides
-  fullName.vb: CarAI.Heuristic(ByRef ActionBuffers)
-  name.vb: Heuristic(ByRef ActionBuffers)
 references:
 - uid: Global
   name: Global
@@ -336,31 +70,11 @@ references:
   nameWithType.vb: ''
   fullName.vb: ''
   name.vb: ''
-- uid: System.Object
-  commentId: T:System.Object
-  parent: System
-  isExternal: true
-  name: Object
-  nameWithType: Object
-  fullName: System.Object
-- uid: System
-  commentId: N:System
-  isExternal: true
-  name: System
-  nameWithType: System
-  fullName: System
-- uid: Global.Car
-  commentId: T:Global.Car
-  name: Car
-  nameWithType: Car
-  fullName: Car
-- uid: System.Single
-  commentId: T:System.Single
-  parent: System
-  isExternal: true
-  name: Single
-  nameWithType: Single
-  fullName: System.Single
+- uid: Global.CarAI.SetDifficulty*
+  commentId: Overload:Global.CarAI.SetDifficulty
+  name: SetDifficulty
+  nameWithType: CarAI.SetDifficulty
+  fullName: CarAI.SetDifficulty
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
@@ -368,40 +82,9 @@ references:
   name: Int32
   nameWithType: Int32
   fullName: System.Int32
-- uid: Global.Transform
-  commentId: '!:Global.Transform'
+- uid: System
+  commentId: N:System
   isExternal: true
-  name: Transform
-  nameWithType: Transform
-  fullName: Transform
-- uid: Global.CarAI.OnEpisodeBegin*
-  commentId: Overload:Global.CarAI.OnEpisodeBegin
-  name: OnEpisodeBegin
-  nameWithType: CarAI.OnEpisodeBegin
-  fullName: CarAI.OnEpisodeBegin
-- uid: Global.CarAI.CollectObservations*
-  commentId: Overload:Global.CarAI.CollectObservations
-  name: CollectObservations
-  nameWithType: CarAI.CollectObservations
-  fullName: CarAI.CollectObservations
-- uid: Global.VectorSensor
-  commentId: '!:Global.VectorSensor'
-  isExternal: true
-  name: VectorSensor
-  nameWithType: VectorSensor
-  fullName: VectorSensor
-- uid: Global.CarAI.OnActionReceived*
-  commentId: Overload:Global.CarAI.OnActionReceived
-  name: OnActionReceived
-  nameWithType: CarAI.OnActionReceived
-  fullName: CarAI.OnActionReceived
-- uid: Global.ActionBuffers
-  isExternal: true
-  name: ActionBuffers
-  nameWithType: ActionBuffers
-  fullName: ActionBuffers
-- uid: Global.CarAI.Heuristic*
-  commentId: Overload:Global.CarAI.Heuristic
-  name: Heuristic
-  nameWithType: CarAI.Heuristic
-  fullName: CarAI.Heuristic
+  name: System
+  nameWithType: System
+  fullName: System

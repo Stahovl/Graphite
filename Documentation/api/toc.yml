@@ -2,30 +2,20 @@
 - uid: Global
   name: Global
   items:
-  - uid: Global.BotMovementController
-    name: BotMovementController
-  - uid: Global.CameraLook
-    name: CameraLook
   - uid: Global.Car
     name: Car
   - uid: Global.CarAI
     name: CarAI
-  - uid: Global.Control
-    name: Control
-  - uid: Global.HandleInput
-    name: HandleInput
-  - uid: Global.Helth
-    name: Helth
-  - uid: Global.NeuralNetwork
-    name: NeuralNetwork
+  - uid: Global.DebugUI
+    name: DebugUI
+  - uid: Global.Difficulty
+    name: Difficulty
+  - uid: Global.GraphiteApplication
+    name: GraphiteApplication
+  - uid: Global.Menu
+    name: Menu
   - uid: Global.Orientation
     name: Orientation
-  - uid: Global.PlayerMove
-    name: PlayerMove
   - uid: Global.PriorityObject
     name: PriorityObject
-  - uid: Global.RaceBot
-    name: RaceBot
-  - uid: Global.Sensor
-    name: Sensor
   name.vb: ''

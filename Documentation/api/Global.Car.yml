@@ -5,10 +5,9 @@ items:
   id: Car
   parent: Global
   children:
-  - Global.Car.direction
-  - Global.Car.moveSpeed
+  - Global.Car.Direction
   - Global.Car.OnUpdate
-  - Global.Car.rotationSpeed
+  - Global.Car.SetModelVisibility(System.Boolean)
   langs:
   - csharp
   - vb
@@ -19,7 +18,7 @@ items:
   source:
     id: Car
     path: ''
-    startLine: 33
+    startLine: 27
   assemblies:
   - cs.temp.dll
   namespace: Global
@@ -32,101 +31,73 @@ items:
   - System.Object
   - Global.Orientation
   inheritedMembers:
-  - Global.Orientation._rb
-  - Global.Orientation.collisionNormal
-  - Global.Orientation.targetRotation
+  - Global.Orientation.TargetRotation
+  - Global.Orientation.Rb
+  - Global.Orientation.CollisionNormal
   - Global.Orientation._gravity
   - Global.Orientation._gravity_normal
   - Global.Orientation._gravity_magnitude
   - Global.Orientation.Gravity
-  - Global.Orientation.RotateInAir
-  - Global.Orientation.SlipAngle
-  - Global.Orientation.LerpNormalGravity
   - Global.Orientation.FreezRotation(System.Boolean)
-  - Global.Orientation.isGrounded
+  - Global.Orientation.IsGrounded
   modifiers.csharp:
   - public
   - class
   modifiers.vb:
   - Public
   - Class
-- uid: Global.Car.moveSpeed
-  commentId: F:Global.Car.moveSpeed
-  id: moveSpeed
+- uid: Global.Car.Direction
+  commentId: F:Global.Car.Direction
+  id: Direction
   parent: Global.Car
   langs:
   - csharp
   - vb
-  name: moveSpeed
-  nameWithType: Car.moveSpeed
-  fullName: Car.moveSpeed
+  name: Direction
+  nameWithType: Car.Direction
+  fullName: Car.Direction
   type: Field
   source:
-    id: moveSpeed
+    id: Direction
     path: ''
     startLine: 37
   assemblies:
   - cs.temp.dll
   namespace: Global
   syntax:
-    content: public float moveSpeed
-    return:
-      type: System.Single
-    content.vb: Public moveSpeed As Single
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: Global.Car.rotationSpeed
-  commentId: F:Global.Car.rotationSpeed
-  id: rotationSpeed
-  parent: Global.Car
-  langs:
-  - csharp
-  - vb
-  name: rotationSpeed
-  nameWithType: Car.rotationSpeed
-  fullName: Car.rotationSpeed
-  type: Field
-  source:
-    id: rotationSpeed
-    path: ''
-    startLine: 38
-  assemblies:
-  - cs.temp.dll
-  namespace: Global
-  syntax:
-    content: public float rotationSpeed
-    return:
-      type: System.Single
-    content.vb: Public rotationSpeed As Single
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
-- uid: Global.Car.direction
-  commentId: F:Global.Car.direction
-  id: direction
-  parent: Global.Car
-  langs:
-  - csharp
-  - vb
-  name: direction
-  nameWithType: Car.direction
-  fullName: Car.direction
-  type: Field
-  source:
-    id: direction
-    path: ''
-    startLine: 39
-  assemblies:
-  - cs.temp.dll
-  namespace: Global
-  syntax:
-    content: public Vector3 direction
+    content: public Vector3 Direction
     return:
       type: Global.Vector3
-    content.vb: Public direction As Vector3
+    content.vb: Public Direction As Vector3
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Car.SetModelVisibility(System.Boolean)
+  commentId: M:Global.Car.SetModelVisibility(System.Boolean)
+  id: SetModelVisibility(System.Boolean)
+  parent: Global.Car
+  langs:
+  - csharp
+  - vb
+  name: SetModelVisibility(Boolean)
+  nameWithType: Car.SetModelVisibility(Boolean)
+  fullName: Car.SetModelVisibility(System.Boolean)
+  type: Method
+  source:
+    id: SetModelVisibility
+    path: ''
+    startLine: 44
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public void SetModelVisibility(bool showCarModel)
+    parameters:
+    - id: showCarModel
+      type: System.Boolean
+    content.vb: Public Sub SetModelVisibility(showCarModel As Boolean)
+  overload: Global.Car.SetModelVisibility*
   modifiers.csharp:
   - public
   modifiers.vb:
@@ -145,7 +116,7 @@ items:
   source:
     id: OnUpdate
     path: ''
-    startLine: 46
+    startLine: 53
   assemblies:
   - cs.temp.dll
   namespace: Global
@@ -168,36 +139,29 @@ references:
   nameWithType.vb: ''
   fullName.vb: ''
   name.vb: ''
-- uid: System.Object
-  commentId: T:System.Object
-  parent: System
-  isExternal: true
-  name: Object
-  nameWithType: Object
-  fullName: System.Object
 - uid: Global.Orientation
   commentId: T:Global.Orientation
   name: Orientation
   nameWithType: Orientation
   fullName: Orientation
-- uid: Global.Orientation._rb
-  commentId: F:Global.Orientation._rb
+- uid: Global.Orientation.TargetRotation
+  commentId: F:Global.Orientation.TargetRotation
   parent: Global.Orientation
-  name: _rb
-  nameWithType: Orientation._rb
-  fullName: Orientation._rb
-- uid: Global.Orientation.collisionNormal
-  commentId: F:Global.Orientation.collisionNormal
+  name: TargetRotation
+  nameWithType: Orientation.TargetRotation
+  fullName: Orientation.TargetRotation
+- uid: Global.Orientation.Rb
+  commentId: F:Global.Orientation.Rb
   parent: Global.Orientation
-  name: collisionNormal
-  nameWithType: Orientation.collisionNormal
-  fullName: Orientation.collisionNormal
-- uid: Global.Orientation.targetRotation
-  commentId: F:Global.Orientation.targetRotation
+  name: Rb
+  nameWithType: Orientation.Rb
+  fullName: Orientation.Rb
+- uid: Global.Orientation.CollisionNormal
+  commentId: F:Global.Orientation.CollisionNormal
   parent: Global.Orientation
-  name: targetRotation
-  nameWithType: Orientation.targetRotation
-  fullName: Orientation.targetRotation
+  name: CollisionNormal
+  nameWithType: Orientation.CollisionNormal
+  fullName: Orientation.CollisionNormal
 - uid: Global.Orientation._gravity
   commentId: F:Global.Orientation._gravity
   parent: Global.Orientation
@@ -222,24 +186,6 @@ references:
   name: Gravity
   nameWithType: Orientation.Gravity
   fullName: Orientation.Gravity
-- uid: Global.Orientation.RotateInAir
-  commentId: F:Global.Orientation.RotateInAir
-  parent: Global.Orientation
-  name: RotateInAir
-  nameWithType: Orientation.RotateInAir
-  fullName: Orientation.RotateInAir
-- uid: Global.Orientation.SlipAngle
-  commentId: F:Global.Orientation.SlipAngle
-  parent: Global.Orientation
-  name: SlipAngle
-  nameWithType: Orientation.SlipAngle
-  fullName: Orientation.SlipAngle
-- uid: Global.Orientation.LerpNormalGravity
-  commentId: F:Global.Orientation.LerpNormalGravity
-  parent: Global.Orientation
-  name: LerpNormalGravity
-  nameWithType: Orientation.LerpNormalGravity
-  fullName: Orientation.LerpNormalGravity
 - uid: Global.Orientation.FreezRotation(System.Boolean)
   commentId: M:Global.Orientation.FreezRotation(System.Boolean)
   parent: Global.Orientation
@@ -279,17 +225,17 @@ references:
   - name: )
     nameWithType: )
     fullName: )
-- uid: Global.Orientation.isGrounded
-  commentId: M:Global.Orientation.isGrounded
+- uid: Global.Orientation.IsGrounded
+  commentId: M:Global.Orientation.IsGrounded
   parent: Global.Orientation
-  name: isGrounded()
-  nameWithType: Orientation.isGrounded()
-  fullName: Orientation.isGrounded()
+  name: IsGrounded()
+  nameWithType: Orientation.IsGrounded()
+  fullName: Orientation.IsGrounded()
   spec.csharp:
-  - uid: Global.Orientation.isGrounded
-    name: isGrounded
-    nameWithType: Orientation.isGrounded
-    fullName: Orientation.isGrounded
+  - uid: Global.Orientation.IsGrounded
+    name: IsGrounded
+    nameWithType: Orientation.IsGrounded
+    fullName: Orientation.IsGrounded
   - name: (
     nameWithType: (
     fullName: (
@@ -297,34 +243,39 @@ references:
     nameWithType: )
     fullName: )
   spec.vb:
-  - uid: Global.Orientation.isGrounded
-    name: isGrounded
-    nameWithType: Orientation.isGrounded
-    fullName: Orientation.isGrounded
+  - uid: Global.Orientation.IsGrounded
+    name: IsGrounded
+    nameWithType: Orientation.IsGrounded
+    fullName: Orientation.IsGrounded
   - name: (
     nameWithType: (
     fullName: (
   - name: )
     nameWithType: )
     fullName: )
+- uid: Global.Vector3
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: Vector3
+- uid: Global.Car.SetModelVisibility*
+  commentId: Overload:Global.Car.SetModelVisibility
+  name: SetModelVisibility
+  nameWithType: Car.SetModelVisibility
+  fullName: Car.SetModelVisibility
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
 - uid: System
   commentId: N:System
   isExternal: true
   name: System
   nameWithType: System
   fullName: System
-- uid: System.Single
-  commentId: T:System.Single
-  parent: System
-  isExternal: true
-  name: Single
-  nameWithType: Single
-  fullName: System.Single
-- uid: Global.Vector3
-  isExternal: true
-  name: Vector3
-  nameWithType: Vector3
-  fullName: Vector3
 - uid: Global.Orientation.OnUpdate
   commentId: M:Global.Orientation.OnUpdate
   parent: Global.Orientation

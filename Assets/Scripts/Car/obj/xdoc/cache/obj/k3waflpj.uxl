@@ -1,0 +1,1400 @@
+id: cs.temp.dll
+language: CSharp
+name:
+  Default: cs.temp.dll
+qualifiedName:
+  Default: cs.temp.dll
+type: Assembly
+modifiers: {}
+items:
+- id: Global
+  language: CSharp
+  name:
+    CSharp: Global
+    VB: ''
+  nameWithType:
+    CSharp: Global
+    VB: ''
+  qualifiedName:
+    CSharp: Global
+    VB: ''
+  type: Namespace
+  assemblies:
+  - cs.temp.dll
+  modifiers: {}
+  items:
+  - id: Global.Difficulty
+    commentId: T:Global.Difficulty
+    language: CSharp
+    name:
+      CSharp: Difficulty
+      VB: Difficulty
+    nameWithType:
+      CSharp: Difficulty
+      VB: Difficulty
+    qualifiedName:
+      CSharp: Difficulty
+      VB: Difficulty
+    type: Enum
+    assemblies:
+    - cs.temp.dll
+    namespace: Global
+    source:
+      id: Difficulty
+      path: ''
+    syntax:
+      content:
+        CSharp: public enum Difficulty
+        VB: Public Enum Difficulty
+    modifiers:
+      CSharp:
+      - public
+      - enum
+      VB:
+      - Public
+      - Enum
+    items:
+    - id: Global.Difficulty.
+      commentId: F:Global.Difficulty.
+      language: CSharp
+      name:
+        CSharp: ''
+        VB: ''
+      nameWithType:
+        CSharp: Difficulty.
+        VB: Difficulty.
+      qualifiedName:
+        CSharp: Difficulty.
+        VB: Difficulty.
+      type: Field
+      assemblies:
+      - cs.temp.dll
+      namespace: Global
+      source:
+        id: ''
+        path: ''
+        startLine: 2
+      syntax:
+        content:
+          CSharp: " = 0"
+          VB: " = 0"
+        return:
+          type: Global.Difficulty
+      modifiers:
+        CSharp:
+        - public
+        - const
+        VB:
+        - Public
+        - Const
+    - id: Global.Difficulty.
+      commentId: F:Global.Difficulty.
+      language: CSharp
+      name:
+        CSharp: ''
+        VB: ''
+      nameWithType:
+        CSharp: Difficulty.
+        VB: Difficulty.
+      qualifiedName:
+        CSharp: Difficulty.
+        VB: Difficulty.
+      type: Field
+      assemblies:
+      - cs.temp.dll
+      namespace: Global
+      source:
+        id: ''
+        path: ''
+        startLine: 3
+      syntax:
+        content:
+          CSharp: " = 1"
+          VB: " = 1"
+        return:
+          type: Global.Difficulty
+      modifiers:
+        CSharp:
+        - public
+        - const
+        VB:
+        - Public
+        - Const
+  - id: Global.GraphiteApplication
+    commentId: T:Global.GraphiteApplication
+    language: CSharp
+    name:
+      CSharp: GraphiteApplication
+      VB: GraphiteApplication
+    nameWithType:
+      CSharp: GraphiteApplication
+      VB: GraphiteApplication
+    qualifiedName:
+      CSharp: GraphiteApplication
+      VB: GraphiteApplication
+    type: Class
+    assemblies:
+    - cs.temp.dll
+    namespace: Global
+    source:
+      id: GraphiteApplication
+      path: ''
+      startLine: 10
+    syntax:
+      content:
+        CSharp: 'public class GraphiteApplication : MonoBehaviour'
+        VB: >-
+          Public Class GraphiteApplication
+
+              Inherits MonoBehaviour
+    inheritance:
+    - System.Object
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items: []
+  - id: Global.PriorityObject
+    commentId: T:Global.PriorityObject
+    language: CSharp
+    name:
+      CSharp: PriorityObject
+      VB: PriorityObject
+    nameWithType:
+      CSharp: PriorityObject
+      VB: PriorityObject
+    qualifiedName:
+      CSharp: PriorityObject
+      VB: PriorityObject
+    type: Class
+    assemblies:
+    - cs.temp.dll
+    namespace: Global
+    source:
+      id: PriorityObject
+      path: ''
+      startLine: 20
+    syntax:
+      content:
+        CSharp: 'public class PriorityObject : MonoBehaviour'
+        VB: >-
+          Public Class PriorityObject
+
+              Inherits MonoBehaviour
+    inheritance:
+    - System.Object
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: Global.PriorityObject.Priority
+      commentId: F:Global.PriorityObject.Priority
+      language: CSharp
+      name:
+        CSharp: Priority
+        VB: Priority
+      nameWithType:
+        CSharp: PriorityObject.Priority
+        VB: PriorityObject.Priority
+      qualifiedName:
+        CSharp: PriorityObject.Priority
+        VB: PriorityObject.Priority
+      type: Field
+      assemblies:
+      - cs.temp.dll
+      namespace: Global
+      source:
+        id: Priority
+        path: ''
+        startLine: 22
+      syntax:
+        content:
+          CSharp: public float Priority
+          VB: Public Priority As Single
+        return:
+          type: System.Single
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+  - id: Global.Car
+    commentId: T:Global.Car
+    language: CSharp
+    name:
+      CSharp: Car
+      VB: Car
+    nameWithType:
+      CSharp: Car
+      VB: Car
+    qualifiedName:
+      CSharp: Car
+      VB: Car
+    type: Class
+    assemblies:
+    - cs.temp.dll
+    namespace: Global
+    source:
+      id: Car
+      path: ''
+      startLine: 27
+    syntax:
+      content:
+        CSharp: 'public class Car : Orientation'
+        VB: >-
+          Public Class Car
+
+              Inherits Orientation
+    inheritance:
+    - System.Object
+    - Global.Orientation
+    inheritedMembers:
+    - Global.Orientation.TargetRotation
+    - Global.Orientation.Rb
+    - Global.Orientation.CollisionNormal
+    - Global.Orientation._gravity
+    - Global.Orientation._gravity_normal
+    - Global.Orientation._gravity_magnitude
+    - Global.Orientation.Gravity
+    - Global.Orientation.FreezRotation(System.Boolean)
+    - Global.Orientation.IsGrounded
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: Global.Car.Direction
+      commentId: F:Global.Car.Direction
+      language: CSharp
+      name:
+        CSharp: Direction
+        VB: Direction
+      nameWithType:
+        CSharp: Car.Direction
+        VB: Car.Direction
+      qualifiedName:
+        CSharp: Car.Direction
+        VB: Car.Direction
+      type: Field
+      assemblies:
+      - cs.temp.dll
+      namespace: Global
+      source:
+        id: Direction
+        path: ''
+        startLine: 37
+      syntax:
+        content:
+          CSharp: public Vector3 Direction
+          VB: Public Direction As Vector3
+        return:
+          type: Global.Vector3
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: Global.Car.SetModelVisibility(System.Boolean)
+      commentId: M:Global.Car.SetModelVisibility(System.Boolean)
+      language: CSharp
+      name:
+        CSharp: SetModelVisibility(Boolean)
+        VB: SetModelVisibility(Boolean)
+      nameWithType:
+        CSharp: Car.SetModelVisibility(Boolean)
+        VB: Car.SetModelVisibility(Boolean)
+      qualifiedName:
+        CSharp: Car.SetModelVisibility(System.Boolean)
+        VB: Car.SetModelVisibility(System.Boolean)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: Global
+      source:
+        id: SetModelVisibility
+        path: ''
+        startLine: 44
+      syntax:
+        content:
+          CSharp: public void SetModelVisibility(bool showCarModel)
+          VB: Public Sub SetModelVisibility(showCarModel As Boolean)
+        parameters:
+        - id: showCarModel
+          type: System.Boolean
+      overload: Global.Car.SetModelVisibility*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: Global.Car.OnUpdate
+      commentId: M:Global.Car.OnUpdate
+      language: CSharp
+      name:
+        CSharp: OnUpdate()
+        VB: OnUpdate()
+      nameWithType:
+        CSharp: Car.OnUpdate()
+        VB: Car.OnUpdate()
+      qualifiedName:
+        CSharp: Car.OnUpdate()
+        VB: Car.OnUpdate()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: Global
+      source:
+        id: OnUpdate
+        path: ''
+        startLine: 53
+      syntax:
+        content:
+          CSharp: public override void OnUpdate()
+          VB: Public Overrides Sub OnUpdate
+      overload: Global.Car.OnUpdate*
+      overridden: Global.Orientation.OnUpdate
+      modifiers:
+        CSharp:
+        - public
+        - override
+        VB:
+        - Public
+        - Overrides
+  - id: Global.CarAI
+    commentId: T:Global.CarAI
+    language: CSharp
+    name:
+      CSharp: CarAI
+      VB: CarAI
+    nameWithType:
+      CSharp: CarAI
+      VB: CarAI
+    qualifiedName:
+      CSharp: CarAI
+      VB: CarAI
+    type: Class
+    assemblies:
+    - cs.temp.dll
+    namespace: Global
+    source:
+      id: CarAI
+      path: ''
+      startLine: 77
+    syntax:
+      content:
+        CSharp: 'public class CarAI : MonoBehaviour'
+        VB: >-
+          Public Class CarAI
+
+              Inherits MonoBehaviour
+    inheritance:
+    - System.Object
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: Global.CarAI.SetDifficulty(System.Int32)
+      commentId: M:Global.CarAI.SetDifficulty(System.Int32)
+      language: CSharp
+      name:
+        CSharp: SetDifficulty(Int32)
+        VB: SetDifficulty(Int32)
+      nameWithType:
+        CSharp: CarAI.SetDifficulty(Int32)
+        VB: CarAI.SetDifficulty(Int32)
+      qualifiedName:
+        CSharp: CarAI.SetDifficulty(System.Int32)
+        VB: CarAI.SetDifficulty(System.Int32)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: Global
+      source:
+        id: SetDifficulty
+        path: ''
+        startLine: 181
+      syntax:
+        content:
+          CSharp: public void SetDifficulty(int difficult)
+          VB: Public Sub SetDifficulty(difficult As Integer)
+        parameters:
+        - id: difficult
+          type: System.Int32
+      overload: Global.CarAI.SetDifficulty*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+  - id: Global.Orientation
+    commentId: T:Global.Orientation
+    language: CSharp
+    name:
+      CSharp: Orientation
+      VB: Orientation
+    nameWithType:
+      CSharp: Orientation
+      VB: Orientation
+    qualifiedName:
+      CSharp: Orientation
+      VB: Orientation
+    type: Class
+    assemblies:
+    - cs.temp.dll
+    namespace: Global
+    source:
+      id: Orientation
+      path: ''
+      startLine: 205
+    syntax:
+      content:
+        CSharp: 'public class Orientation : MonoBehaviour'
+        VB: >-
+          Public Class Orientation
+
+              Inherits MonoBehaviour
+    inheritance:
+    - System.Object
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items:
+    - id: Global.Orientation.TargetRotation
+      commentId: F:Global.Orientation.TargetRotation
+      language: CSharp
+      name:
+        CSharp: TargetRotation
+        VB: TargetRotation
+      nameWithType:
+        CSharp: Orientation.TargetRotation
+        VB: Orientation.TargetRotation
+      qualifiedName:
+        CSharp: Orientation.TargetRotation
+        VB: Orientation.TargetRotation
+      type: Field
+      assemblies:
+      - cs.temp.dll
+      namespace: Global
+      source:
+        id: TargetRotation
+        path: ''
+        startLine: 208
+      syntax:
+        content:
+          CSharp: public Quaternion TargetRotation
+          VB: Public TargetRotation As Quaternion
+        return:
+          type: Global.Quaternion
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+    - id: Global.Orientation.Rb
+      commentId: F:Global.Orientation.Rb
+      language: CSharp
+      name:
+        CSharp: Rb
+        VB: Rb
+      nameWithType:
+        CSharp: Orientation.Rb
+        VB: Orientation.Rb
+      qualifiedName:
+        CSharp: Orientation.Rb
+        VB: Orientation.Rb
+      type: Field
+      assemblies:
+      - cs.temp.dll
+      namespace: Global
+      source:
+        id: Rb
+        path: ''
+        startLine: 216
+      syntax:
+        content:
+          CSharp: protected Rigidbody Rb
+          VB: Protected Rb As Rigidbody
+        return:
+          type: Global.Rigidbody
+      modifiers:
+        CSharp:
+        - protected
+        VB:
+        - Protected
+    - id: Global.Orientation.CollisionNormal
+      commentId: F:Global.Orientation.CollisionNormal
+      language: CSharp
+      name:
+        CSharp: CollisionNormal
+        VB: CollisionNormal
+      nameWithType:
+        CSharp: Orientation.CollisionNormal
+        VB: Orientation.CollisionNormal
+      qualifiedName:
+        CSharp: Orientation.CollisionNormal
+        VB: Orientation.CollisionNormal
+      type: Field
+      assemblies:
+      - cs.temp.dll
+      namespace: Global
+      source:
+        id: CollisionNormal
+        path: ''
+        startLine: 218
+      syntax:
+        content:
+          CSharp: protected Vector3 CollisionNormal
+          VB: Protected CollisionNormal As Vector3
+        return:
+          type: Global.Vector3
+      modifiers:
+        CSharp:
+        - protected
+        VB:
+        - Protected
+    - id: Global.Orientation._gravity
+      commentId: F:Global.Orientation._gravity
+      language: CSharp
+      name:
+        CSharp: _gravity
+        VB: _gravity
+      nameWithType:
+        CSharp: Orientation._gravity
+        VB: Orientation._gravity
+      qualifiedName:
+        CSharp: Orientation._gravity
+        VB: Orientation._gravity
+      type: Field
+      assemblies:
+      - cs.temp.dll
+      namespace: Global
+      source:
+        id: _gravity
+        path: ''
+        startLine: 219
+      syntax:
+        content:
+          CSharp: protected Vector3 _gravity
+          VB: Protected _gravity As Vector3
+        return:
+          type: Global.Vector3
+      modifiers:
+        CSharp:
+        - protected
+        VB:
+        - Protected
+    - id: Global.Orientation._gravity_normal
+      commentId: F:Global.Orientation._gravity_normal
+      language: CSharp
+      name:
+        CSharp: _gravity_normal
+        VB: _gravity_normal
+      nameWithType:
+        CSharp: Orientation._gravity_normal
+        VB: Orientation._gravity_normal
+      qualifiedName:
+        CSharp: Orientation._gravity_normal
+        VB: Orientation._gravity_normal
+      type: Field
+      assemblies:
+      - cs.temp.dll
+      namespace: Global
+      source:
+        id: _gravity_normal
+        path: ''
+        startLine: 220
+      syntax:
+        content:
+          CSharp: protected Vector3 _gravity_normal
+          VB: Protected _gravity_normal As Vector3
+        return:
+          type: Global.Vector3
+      modifiers:
+        CSharp:
+        - protected
+        VB:
+        - Protected
+    - id: Global.Orientation._gravity_magnitude
+      commentId: F:Global.Orientation._gravity_magnitude
+      language: CSharp
+      name:
+        CSharp: _gravity_magnitude
+        VB: _gravity_magnitude
+      nameWithType:
+        CSharp: Orientation._gravity_magnitude
+        VB: Orientation._gravity_magnitude
+      qualifiedName:
+        CSharp: Orientation._gravity_magnitude
+        VB: Orientation._gravity_magnitude
+      type: Field
+      assemblies:
+      - cs.temp.dll
+      namespace: Global
+      source:
+        id: _gravity_magnitude
+        path: ''
+        startLine: 221
+      syntax:
+        content:
+          CSharp: protected float _gravity_magnitude
+          VB: Protected _gravity_magnitude As Single
+        return:
+          type: System.Single
+      modifiers:
+        CSharp:
+        - protected
+        VB:
+        - Protected
+    - id: Global.Orientation.Gravity
+      commentId: P:Global.Orientation.Gravity
+      language: CSharp
+      name:
+        CSharp: Gravity
+        VB: Gravity
+      nameWithType:
+        CSharp: Orientation.Gravity
+        VB: Orientation.Gravity
+      qualifiedName:
+        CSharp: Orientation.Gravity
+        VB: Orientation.Gravity
+      type: Property
+      assemblies:
+      - cs.temp.dll
+      namespace: Global
+      source:
+        id: Gravity
+        path: ''
+        startLine: 223
+      syntax:
+        content:
+          CSharp: public Vector3 Gravity { get; set; }
+          VB: Public Property Gravity As Vector3
+        parameters: []
+        return:
+          type: Global.Vector3
+      overload: Global.Orientation.Gravity*
+      modifiers:
+        CSharp:
+        - public
+        - get
+        - set
+        VB:
+        - Public
+    - id: Global.Orientation.FreezRotation(System.Boolean)
+      commentId: M:Global.Orientation.FreezRotation(System.Boolean)
+      language: CSharp
+      name:
+        CSharp: FreezRotation(Boolean)
+        VB: FreezRotation(Boolean)
+      nameWithType:
+        CSharp: Orientation.FreezRotation(Boolean)
+        VB: Orientation.FreezRotation(Boolean)
+      qualifiedName:
+        CSharp: Orientation.FreezRotation(System.Boolean)
+        VB: Orientation.FreezRotation(System.Boolean)
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: Global
+      source:
+        id: FreezRotation
+        path: ''
+        startLine: 242
+      syntax:
+        content:
+          CSharp: protected void FreezRotation(bool value)
+          VB: Protected Sub FreezRotation(value As Boolean)
+        parameters:
+        - id: value
+          type: System.Boolean
+      overload: Global.Orientation.FreezRotation*
+      modifiers:
+        CSharp:
+        - protected
+        VB:
+        - Protected
+    - id: Global.Orientation.OnUpdate
+      commentId: M:Global.Orientation.OnUpdate
+      language: CSharp
+      name:
+        CSharp: OnUpdate()
+        VB: OnUpdate()
+      nameWithType:
+        CSharp: Orientation.OnUpdate()
+        VB: Orientation.OnUpdate()
+      qualifiedName:
+        CSharp: Orientation.OnUpdate()
+        VB: Orientation.OnUpdate()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: Global
+      source:
+        id: OnUpdate
+        path: ''
+        startLine: 262
+      syntax:
+        content:
+          CSharp: public virtual void OnUpdate()
+          VB: Public Overridable Sub OnUpdate
+      overload: Global.Orientation.OnUpdate*
+      modifiers:
+        CSharp:
+        - public
+        - virtual
+        VB:
+        - Public
+        - Overridable
+    - id: Global.Orientation.IsGrounded
+      commentId: M:Global.Orientation.IsGrounded
+      language: CSharp
+      name:
+        CSharp: IsGrounded()
+        VB: IsGrounded()
+      nameWithType:
+        CSharp: Orientation.IsGrounded()
+        VB: Orientation.IsGrounded()
+      qualifiedName:
+        CSharp: Orientation.IsGrounded()
+        VB: Orientation.IsGrounded()
+      type: Method
+      assemblies:
+      - cs.temp.dll
+      namespace: Global
+      source:
+        id: IsGrounded
+        path: ''
+        startLine: 357
+      syntax:
+        content:
+          CSharp: public bool IsGrounded()
+          VB: Public Function IsGrounded As Boolean
+        return:
+          type: System.Boolean
+      overload: Global.Orientation.IsGrounded*
+      modifiers:
+        CSharp:
+        - public
+        VB:
+        - Public
+  - id: Global.DebugUI
+    commentId: T:Global.DebugUI
+    language: CSharp
+    name:
+      CSharp: DebugUI
+      VB: DebugUI
+    nameWithType:
+      CSharp: DebugUI
+      VB: DebugUI
+    qualifiedName:
+      CSharp: DebugUI
+      VB: DebugUI
+    type: Class
+    assemblies:
+    - cs.temp.dll
+    namespace: Global
+    source:
+      id: DebugUI
+      path: ''
+      startLine: 368
+    syntax:
+      content:
+        CSharp: 'public class DebugUI : MonoBehaviour'
+        VB: >-
+          Public Class DebugUI
+
+              Inherits MonoBehaviour
+    inheritance:
+    - System.Object
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items: []
+  - id: Global.Menu
+    commentId: T:Global.Menu
+    language: CSharp
+    name:
+      CSharp: Menu
+      VB: Menu
+    nameWithType:
+      CSharp: Menu
+      VB: Menu
+    qualifiedName:
+      CSharp: Menu
+      VB: Menu
+    type: Class
+    assemblies:
+    - cs.temp.dll
+    namespace: Global
+    source:
+      id: Menu
+      path: ''
+      startLine: 411
+    syntax:
+      content:
+        CSharp: 'public class Menu : MonoBehaviour'
+        VB: >-
+          Public Class Menu
+
+              Inherits MonoBehaviour
+    inheritance:
+    - System.Object
+    modifiers:
+      CSharp:
+      - public
+      - class
+      VB:
+      - Public
+      - Class
+    items: []
+references:
+  Global.Difficulty:
+    name:
+      CSharp:
+      - id: Global.Difficulty
+        name: Difficulty
+        nameWithType: Difficulty
+        qualifiedName: Difficulty
+      VB:
+      - id: Global.Difficulty
+        name: Difficulty
+        nameWithType: Difficulty
+        qualifiedName: Difficulty
+    isDefinition: true
+    commentId: T:Global.Difficulty
+  Global.GraphiteApplication:
+    name:
+      CSharp:
+      - id: Global.GraphiteApplication
+        name: GraphiteApplication
+        nameWithType: GraphiteApplication
+        qualifiedName: GraphiteApplication
+      VB:
+      - id: Global.GraphiteApplication
+        name: GraphiteApplication
+        nameWithType: GraphiteApplication
+        qualifiedName: GraphiteApplication
+    isDefinition: true
+    commentId: T:Global.GraphiteApplication
+  System:
+    name:
+      CSharp:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+        isExternal: true
+      VB:
+      - name: System
+        nameWithType: System
+        qualifiedName: System
+    isDefinition: true
+    commentId: N:System
+  System.Single:
+    name:
+      CSharp:
+      - id: System.Single
+        name: Single
+        nameWithType: Single
+        qualifiedName: System.Single
+        isExternal: true
+      VB:
+      - id: System.Single
+        name: Single
+        nameWithType: Single
+        qualifiedName: System.Single
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Single
+  Global.PriorityObject:
+    name:
+      CSharp:
+      - id: Global.PriorityObject
+        name: PriorityObject
+        nameWithType: PriorityObject
+        qualifiedName: PriorityObject
+      VB:
+      - id: Global.PriorityObject
+        name: PriorityObject
+        nameWithType: PriorityObject
+        qualifiedName: PriorityObject
+    isDefinition: true
+    commentId: T:Global.PriorityObject
+  Global.Orientation:
+    name:
+      CSharp:
+      - id: Global.Orientation
+        name: Orientation
+        nameWithType: Orientation
+        qualifiedName: Orientation
+      VB:
+      - id: Global.Orientation
+        name: Orientation
+        nameWithType: Orientation
+        qualifiedName: Orientation
+    isDefinition: true
+    commentId: T:Global.Orientation
+  Global.Orientation.TargetRotation:
+    name:
+      CSharp:
+      - id: Global.Orientation.TargetRotation
+        name: TargetRotation
+        nameWithType: Orientation.TargetRotation
+        qualifiedName: Orientation.TargetRotation
+      VB:
+      - id: Global.Orientation.TargetRotation
+        name: TargetRotation
+        nameWithType: Orientation.TargetRotation
+        qualifiedName: Orientation.TargetRotation
+    isDefinition: true
+    parent: Global.Orientation
+    commentId: F:Global.Orientation.TargetRotation
+  Global.Orientation.Rb:
+    name:
+      CSharp:
+      - id: Global.Orientation.Rb
+        name: Rb
+        nameWithType: Orientation.Rb
+        qualifiedName: Orientation.Rb
+      VB:
+      - id: Global.Orientation.Rb
+        name: Rb
+        nameWithType: Orientation.Rb
+        qualifiedName: Orientation.Rb
+    isDefinition: true
+    parent: Global.Orientation
+    commentId: F:Global.Orientation.Rb
+  Global.Orientation.CollisionNormal:
+    name:
+      CSharp:
+      - id: Global.Orientation.CollisionNormal
+        name: CollisionNormal
+        nameWithType: Orientation.CollisionNormal
+        qualifiedName: Orientation.CollisionNormal
+      VB:
+      - id: Global.Orientation.CollisionNormal
+        name: CollisionNormal
+        nameWithType: Orientation.CollisionNormal
+        qualifiedName: Orientation.CollisionNormal
+    isDefinition: true
+    parent: Global.Orientation
+    commentId: F:Global.Orientation.CollisionNormal
+  Global.Orientation._gravity:
+    name:
+      CSharp:
+      - id: Global.Orientation._gravity
+        name: _gravity
+        nameWithType: Orientation._gravity
+        qualifiedName: Orientation._gravity
+      VB:
+      - id: Global.Orientation._gravity
+        name: _gravity
+        nameWithType: Orientation._gravity
+        qualifiedName: Orientation._gravity
+    isDefinition: true
+    parent: Global.Orientation
+    commentId: F:Global.Orientation._gravity
+  Global.Orientation._gravity_normal:
+    name:
+      CSharp:
+      - id: Global.Orientation._gravity_normal
+        name: _gravity_normal
+        nameWithType: Orientation._gravity_normal
+        qualifiedName: Orientation._gravity_normal
+      VB:
+      - id: Global.Orientation._gravity_normal
+        name: _gravity_normal
+        nameWithType: Orientation._gravity_normal
+        qualifiedName: Orientation._gravity_normal
+    isDefinition: true
+    parent: Global.Orientation
+    commentId: F:Global.Orientation._gravity_normal
+  Global.Orientation._gravity_magnitude:
+    name:
+      CSharp:
+      - id: Global.Orientation._gravity_magnitude
+        name: _gravity_magnitude
+        nameWithType: Orientation._gravity_magnitude
+        qualifiedName: Orientation._gravity_magnitude
+      VB:
+      - id: Global.Orientation._gravity_magnitude
+        name: _gravity_magnitude
+        nameWithType: Orientation._gravity_magnitude
+        qualifiedName: Orientation._gravity_magnitude
+    isDefinition: true
+    parent: Global.Orientation
+    commentId: F:Global.Orientation._gravity_magnitude
+  Global.Orientation.Gravity:
+    name:
+      CSharp:
+      - id: Global.Orientation.Gravity
+        name: Gravity
+        nameWithType: Orientation.Gravity
+        qualifiedName: Orientation.Gravity
+      VB:
+      - id: Global.Orientation.Gravity
+        name: Gravity
+        nameWithType: Orientation.Gravity
+        qualifiedName: Orientation.Gravity
+    isDefinition: true
+    parent: Global.Orientation
+    commentId: P:Global.Orientation.Gravity
+  Global.Orientation.FreezRotation(System.Boolean):
+    name:
+      CSharp:
+      - id: Global.Orientation.FreezRotation(System.Boolean)
+        name: FreezRotation
+        nameWithType: Orientation.FreezRotation
+        qualifiedName: Orientation.FreezRotation
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Boolean
+        name: Boolean
+        nameWithType: Boolean
+        qualifiedName: System.Boolean
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: Global.Orientation.FreezRotation(System.Boolean)
+        name: FreezRotation
+        nameWithType: Orientation.FreezRotation
+        qualifiedName: Orientation.FreezRotation
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - id: System.Boolean
+        name: Boolean
+        nameWithType: Boolean
+        qualifiedName: System.Boolean
+        isExternal: true
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: Global.Orientation
+    commentId: M:Global.Orientation.FreezRotation(System.Boolean)
+  Global.Orientation.IsGrounded:
+    name:
+      CSharp:
+      - id: Global.Orientation.IsGrounded
+        name: IsGrounded
+        nameWithType: Orientation.IsGrounded
+        qualifiedName: Orientation.IsGrounded
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: Global.Orientation.IsGrounded
+        name: IsGrounded
+        nameWithType: Orientation.IsGrounded
+        qualifiedName: Orientation.IsGrounded
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: Global.Orientation
+    commentId: M:Global.Orientation.IsGrounded
+  Global.Vector3:
+    name:
+      CSharp:
+      - id: Global.Vector3
+        name: Vector3
+        nameWithType: Vector3
+        qualifiedName: Vector3
+        isExternal: true
+      VB:
+      - id: Global.Vector3
+        name: Vector3
+        nameWithType: Vector3
+        qualifiedName: Vector3
+        isExternal: true
+    isDefinition: true
+  System.Boolean:
+    name:
+      CSharp:
+      - id: System.Boolean
+        name: Boolean
+        nameWithType: Boolean
+        qualifiedName: System.Boolean
+        isExternal: true
+      VB:
+      - id: System.Boolean
+        name: Boolean
+        nameWithType: Boolean
+        qualifiedName: System.Boolean
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Boolean
+  Global.Car.SetModelVisibility*:
+    name:
+      CSharp:
+      - id: Global.Car.SetModelVisibility*
+        name: SetModelVisibility
+        nameWithType: Car.SetModelVisibility
+        qualifiedName: Car.SetModelVisibility
+      VB:
+      - id: Global.Car.SetModelVisibility*
+        name: SetModelVisibility
+        nameWithType: Car.SetModelVisibility
+        qualifiedName: Car.SetModelVisibility
+    isDefinition: true
+    commentId: Overload:Global.Car.SetModelVisibility
+  Global.Orientation.OnUpdate:
+    name:
+      CSharp:
+      - id: Global.Orientation.OnUpdate
+        name: OnUpdate
+        nameWithType: Orientation.OnUpdate
+        qualifiedName: Orientation.OnUpdate
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+      VB:
+      - id: Global.Orientation.OnUpdate
+        name: OnUpdate
+        nameWithType: Orientation.OnUpdate
+        qualifiedName: Orientation.OnUpdate
+      - name: (
+        nameWithType: (
+        qualifiedName: (
+      - name: )
+        nameWithType: )
+        qualifiedName: )
+    isDefinition: true
+    parent: Global.Orientation
+    commentId: M:Global.Orientation.OnUpdate
+  Global.Car.OnUpdate*:
+    name:
+      CSharp:
+      - id: Global.Car.OnUpdate*
+        name: OnUpdate
+        nameWithType: Car.OnUpdate
+        qualifiedName: Car.OnUpdate
+      VB:
+      - id: Global.Car.OnUpdate*
+        name: OnUpdate
+        nameWithType: Car.OnUpdate
+        qualifiedName: Car.OnUpdate
+    isDefinition: true
+    commentId: Overload:Global.Car.OnUpdate
+  Global.Car:
+    name:
+      CSharp:
+      - id: Global.Car
+        name: Car
+        nameWithType: Car
+        qualifiedName: Car
+      VB:
+      - id: Global.Car
+        name: Car
+        nameWithType: Car
+        qualifiedName: Car
+    isDefinition: true
+    commentId: T:Global.Car
+  System.Int32:
+    name:
+      CSharp:
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+      VB:
+      - id: System.Int32
+        name: Int32
+        nameWithType: Int32
+        qualifiedName: System.Int32
+        isExternal: true
+    isDefinition: true
+    parent: System
+    commentId: T:System.Int32
+  Global.CarAI.SetDifficulty*:
+    name:
+      CSharp:
+      - id: Global.CarAI.SetDifficulty*
+        name: SetDifficulty
+        nameWithType: CarAI.SetDifficulty
+        qualifiedName: CarAI.SetDifficulty
+      VB:
+      - id: Global.CarAI.SetDifficulty*
+        name: SetDifficulty
+        nameWithType: CarAI.SetDifficulty
+        qualifiedName: CarAI.SetDifficulty
+    isDefinition: true
+    commentId: Overload:Global.CarAI.SetDifficulty
+  Global.CarAI:
+    name:
+      CSharp:
+      - id: Global.CarAI
+        name: CarAI
+        nameWithType: CarAI
+        qualifiedName: CarAI
+      VB:
+      - id: Global.CarAI
+        name: CarAI
+        nameWithType: CarAI
+        qualifiedName: CarAI
+    isDefinition: true
+    commentId: T:Global.CarAI
+  Global.Quaternion:
+    name:
+      CSharp:
+      - id: Global.Quaternion
+        name: Quaternion
+        nameWithType: Quaternion
+        qualifiedName: Quaternion
+        isExternal: true
+      VB:
+      - id: Global.Quaternion
+        name: Quaternion
+        nameWithType: Quaternion
+        qualifiedName: Quaternion
+        isExternal: true
+    isDefinition: true
+    commentId: '!:Global.Quaternion'
+  Global.Rigidbody:
+    name:
+      CSharp:
+      - id: Global.Rigidbody
+        name: Rigidbody
+        nameWithType: Rigidbody
+        qualifiedName: Rigidbody
+        isExternal: true
+      VB:
+      - id: Global.Rigidbody
+        name: Rigidbody
+        nameWithType: Rigidbody
+        qualifiedName: Rigidbody
+        isExternal: true
+    isDefinition: true
+    commentId: '!:Global.Rigidbody'
+  Global.Orientation.Gravity*:
+    name:
+      CSharp:
+      - id: Global.Orientation.Gravity*
+        name: Gravity
+        nameWithType: Orientation.Gravity
+        qualifiedName: Orientation.Gravity
+      VB:
+      - id: Global.Orientation.Gravity*
+        name: Gravity
+        nameWithType: Orientation.Gravity
+        qualifiedName: Orientation.Gravity
+    isDefinition: true
+    commentId: Overload:Global.Orientation.Gravity
+  Global.Orientation.FreezRotation*:
+    name:
+      CSharp:
+      - id: Global.Orientation.FreezRotation*
+        name: FreezRotation
+        nameWithType: Orientation.FreezRotation
+        qualifiedName: Orientation.FreezRotation
+      VB:
+      - id: Global.Orientation.FreezRotation*
+        name: FreezRotation
+        nameWithType: Orientation.FreezRotation
+        qualifiedName: Orientation.FreezRotation
+    isDefinition: true
+    commentId: Overload:Global.Orientation.FreezRotation
+  Global.Orientation.OnUpdate*:
+    name:
+      CSharp:
+      - id: Global.Orientation.OnUpdate*
+        name: OnUpdate
+        nameWithType: Orientation.OnUpdate
+        qualifiedName: Orientation.OnUpdate
+      VB:
+      - id: Global.Orientation.OnUpdate*
+        name: OnUpdate
+        nameWithType: Orientation.OnUpdate
+        qualifiedName: Orientation.OnUpdate
+    isDefinition: true
+    commentId: Overload:Global.Orientation.OnUpdate
+  Global.Orientation.IsGrounded*:
+    name:
+      CSharp:
+      - id: Global.Orientation.IsGrounded*
+        name: IsGrounded
+        nameWithType: Orientation.IsGrounded
+        qualifiedName: Orientation.IsGrounded
+      VB:
+      - id: Global.Orientation.IsGrounded*
+        name: IsGrounded
+        nameWithType: Orientation.IsGrounded
+        qualifiedName: Orientation.IsGrounded
+    isDefinition: true
+    commentId: Overload:Global.Orientation.IsGrounded
+  Global.DebugUI:
+    name:
+      CSharp:
+      - id: Global.DebugUI
+        name: DebugUI
+        nameWithType: DebugUI
+        qualifiedName: DebugUI
+      VB:
+      - id: Global.DebugUI
+        name: DebugUI
+        nameWithType: DebugUI
+        qualifiedName: DebugUI
+    isDefinition: true
+    commentId: T:Global.DebugUI
+  Global.Menu:
+    name:
+      CSharp:
+      - id: Global.Menu
+        name: Menu
+        nameWithType: Menu
+        qualifiedName: Menu
+      VB:
+      - id: Global.Menu
+        name: Menu
+        nameWithType: Menu
+        qualifiedName: Menu
+    isDefinition: true
+    commentId: T:Global.Menu
+  Global:
+    name:
+      CSharp:
+      - name: Global
+        nameWithType: Global
+        qualifiedName: Global
+      VB:
+      - name: ''
+        nameWithType: ''
+        qualifiedName: ''
+    isDefinition: true

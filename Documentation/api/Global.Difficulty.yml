@@ -1,0 +1,100 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Difficulty
+  commentId: T:Global.Difficulty
+  id: Difficulty
+  parent: Global
+  children:
+  - Global.Difficulty.
+  - Global.Difficulty.
+  langs:
+  - csharp
+  - vb
+  name: Difficulty
+  nameWithType: Difficulty
+  fullName: Difficulty
+  type: Enum
+  source:
+    id: Difficulty
+    path: ''
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public enum Difficulty
+    content.vb: Public Enum Difficulty
+  modifiers.csharp:
+  - public
+  - enum
+  modifiers.vb:
+  - Public
+  - Enum
+- uid: Global.Difficulty.
+  commentId: F:Global.Difficulty.
+  id: ''
+  parent: Global.Difficulty
+  langs:
+  - csharp
+  - vb
+  name: ''
+  nameWithType: Difficulty.
+  fullName: Difficulty.
+  type: Field
+  source:
+    id: ''
+    path: ''
+    startLine: 2
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: " = 0"
+    return:
+      type: Global.Difficulty
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+- uid: Global.Difficulty.
+  commentId: F:Global.Difficulty.
+  id: ''
+  parent: Global.Difficulty
+  langs:
+  - csharp
+  - vb
+  name: ''
+  nameWithType: Difficulty.
+  fullName: Difficulty.
+  type: Field
+  source:
+    id: ''
+    path: ''
+    startLine: 3
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: " = 1"
+    return:
+      type: Global.Difficulty
+  modifiers.csharp:
+  - public
+  - const
+  modifiers.vb:
+  - Public
+  - Const
+references:
+- uid: Global
+  name: Global
+  nameWithType: Global
+  fullName: Global
+  nameWithType.vb: ''
+  fullName.vb: ''
+  name.vb: ''
+- uid: Global.Difficulty
+  commentId: T:Global.Difficulty
+  name: Difficulty
+  nameWithType: Difficulty
+  fullName: Difficulty

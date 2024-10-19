@@ -3,19 +3,14 @@ items:
 - uid: Global
   id: Global
   children:
-  - Global.BotMovementController
-  - Global.CameraLook
   - Global.Car
   - Global.CarAI
-  - Global.Control
-  - Global.HandleInput
-  - Global.Helth
-  - Global.NeuralNetwork
+  - Global.DebugUI
+  - Global.Difficulty
+  - Global.GraphiteApplication
+  - Global.Menu
   - Global.Orientation
-  - Global.PlayerMove
   - Global.PriorityObject
-  - Global.RaceBot
-  - Global.Sensor
   langs:
   - csharp
   - vb
@@ -29,68 +24,43 @@ items:
   fullName.vb: ''
   name.vb: ''
 references:
-- uid: Global.CameraLook
-  commentId: T:Global.CameraLook
-  name: CameraLook
-  nameWithType: CameraLook
-  fullName: CameraLook
-- uid: Global.Car
-  commentId: T:Global.Car
-  name: Car
-  nameWithType: Car
-  fullName: Car
+- uid: Global.Difficulty
+  commentId: T:Global.Difficulty
+  name: Difficulty
+  nameWithType: Difficulty
+  fullName: Difficulty
+- uid: Global.GraphiteApplication
+  commentId: T:Global.GraphiteApplication
+  name: GraphiteApplication
+  nameWithType: GraphiteApplication
+  fullName: GraphiteApplication
 - uid: Global.PriorityObject
   commentId: T:Global.PriorityObject
   name: PriorityObject
   nameWithType: PriorityObject
   fullName: PriorityObject
+- uid: Global.Car
+  commentId: T:Global.Car
+  name: Car
+  nameWithType: Car
+  fullName: Car
 - uid: Global.CarAI
   commentId: T:Global.CarAI
   name: CarAI
   nameWithType: CarAI
   fullName: CarAI
-- uid: Global.NeuralNetwork
-  commentId: T:Global.NeuralNetwork
-  name: NeuralNetwork
-  nameWithType: NeuralNetwork
-  fullName: NeuralNetwork
-- uid: Global.Helth
-  commentId: T:Global.Helth
-  name: Helth
-  nameWithType: Helth
-  fullName: Helth
-- uid: Global.Control
-  commentId: T:Global.Control
-  name: Control
-  nameWithType: Control
-  fullName: Control
 - uid: Global.Orientation
   commentId: T:Global.Orientation
   name: Orientation
   nameWithType: Orientation
   fullName: Orientation
-- uid: Global.PlayerMove
-  commentId: T:Global.PlayerMove
-  name: PlayerMove
-  nameWithType: PlayerMove
-  fullName: PlayerMove
-- uid: Global.HandleInput
-  commentId: T:Global.HandleInput
-  name: HandleInput
-  nameWithType: HandleInput
-  fullName: HandleInput
-- uid: Global.RaceBot
-  commentId: T:Global.RaceBot
-  name: RaceBot
-  nameWithType: RaceBot
-  fullName: RaceBot
-- uid: Global.BotMovementController
-  commentId: T:Global.BotMovementController
-  name: BotMovementController
-  nameWithType: BotMovementController
-  fullName: BotMovementController
-- uid: Global.Sensor
-  commentId: T:Global.Sensor
-  name: Sensor
-  nameWithType: Sensor
-  fullName: Sensor
+- uid: Global.DebugUI
+  commentId: T:Global.DebugUI
+  name: DebugUI
+  nameWithType: DebugUI
+  fullName: DebugUI
+- uid: Global.Menu
+  commentId: T:Global.Menu
+  name: Menu
+  nameWithType: Menu
+  fullName: Menu
