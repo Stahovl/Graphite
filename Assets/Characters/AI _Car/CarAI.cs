@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.UIElements;
-using Unity.MLAgents.Sensors;
+
 public class CarAI : MonoBehaviour
 {
     public Car _car; // Ссылка на скрипт управления машинкой
@@ -12,6 +12,7 @@ public class CarAI : MonoBehaviour
     public bool visualizeRays = true; // Визуализировать ли лучи
 
     private float accelerate = 0f;
+    public float HeigthRay = 0.25f;
     private void move(float moveInput, float turnInput)
     {
         // _car.direction.z отвечает за движение вперед/назад
@@ -39,7 +40,7 @@ public class CarAI : MonoBehaviour
             Vector3 rayDirection = _car.targetRotation * (Quaternion.Euler(0, currentAngle, 0) * Vector3.forward);
 
             // Выпускаем луч
-            Ray ray = new Ray(_car.transform.position, rayDirection);
+            Ray ray = new Ray(_car.transform.position + _car.transform.up* HeigthRay, rayDirection);
             RaycastHit hit;
 
             // Проверяем столкновение луча с препятствием
@@ -59,7 +60,7 @@ public class CarAI : MonoBehaviour
                 {
                     Debug.DrawRay(_car.transform.position, rayDirection * hit.distance, Color.Lerp(Color.red, Color.green, distanceFactor));
                 }
-                if(Random.Range(0f, 1f)>0.75f) accelerate += hit.transform.gameObject.TryGetComponent<Car>(out var aponent) ? Random.Range(0f, 0.05f) : 0f;
+                if(Random.Range(0f, 1f)>0.75f) accelerate += hit.transform.gameObject.TryGetComponent<Car>(out var aponent) ? Random.Range(1f, 2f) * distanceFactor : 0f;
             }
             else
             {
@@ -74,6 +75,7 @@ public class CarAI : MonoBehaviour
             }
         }
         averageDirection /= rayCount;
+        accelerate /= rayCount;
 
         averageDirection.Normalize();
 
@@ -90,10 +92,6 @@ public class CarAI : MonoBehaviour
         // Например, можем передать это направление в функцию движения
         float turnInput = Vector3.SignedAngle(_car.transform.forward, avoidanceDirection, Vector3.up); // Поворот в зависимости от направления
 
-        move(1f + accelerate, turnInput);
-    }
-}
-        _car.direction.z = moveInput;
-        _car.direction.x = turnInput;
+        move(Random.Range(0.9f,1f) + accelerate, turnInput);
     }
 }
