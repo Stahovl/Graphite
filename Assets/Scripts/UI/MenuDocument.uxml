@@ -2,5 +2,6 @@
     <engine:VisualElement style="flex-grow: 1; justify-content: center; background-color: black; padding: 20px;">
         <engine:Button text="Начать" name="StartButton" style="text-align: center; margin-bottom: 20px;" />
         <engine:EnumField label="Сложность" name="DifficultyField" style="margin-bottom: 20px; color: rgb(255, 255, 255); background-color: rgba(41, 41, 41, 0.5);" />
+        <engine:Toggle label="Модели машинок вместо кубов" name="DebugToggle" style="color: rgb(255, 255, 255); align-items: flex-end; justify-content: space-between; flex-direction: row;" />
     </engine:VisualElement>
 </engine:UXML>
