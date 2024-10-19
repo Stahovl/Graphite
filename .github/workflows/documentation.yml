@@ -6,37 +6,30 @@ on:
       - main
 
 jobs:
-  # Build the documentation
   build:
-    runs-on: windows-latest # Required by DocFX
+    runs-on: windows-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        
+
       - name: Install DocFX
         run: choco install -y docfx
-        
+
       - name: Use README.md as index.md
         run: cp README.md Documentation/index.md
-        
+
       - name: Build
         run: docfx Documentation/docfx.json
-        
-      - name: Create .nojekyll file
-        run: echo "" > Documentation/.nojekyll
 
-      # List deployed files to confirm .nojekyll exists
-      - name: List deployed files
-        run: ls -la Documentation/_site
-        
-      # Upload the generated documentation
+      - name: Create .nojekyll file
+        run: echo "" > Documentation/_site/.nojekyll
+
       - name: Upload site artifact
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v2
         with:
           name: _site
-          path: Documentation/_site # Must match the 'build.dest' value in your docfx.json
+          path: Documentation/_site
 
-  # Deploy the generated documentation to the gh-pages branch
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -44,9 +37,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      # Download the generated documentation
       - name: Download site artifact
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v2
         with:
           name: _site
 
