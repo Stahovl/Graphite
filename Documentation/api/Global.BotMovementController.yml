@@ -1,0 +1,174 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.BotMovementController
+  commentId: T:Global.BotMovementController
+  id: BotMovementController
+  parent: Global
+  children:
+  - Global.BotMovementController.acceleration
+  - Global.BotMovementController.maxSpeed
+  - Global.BotMovementController.steering
+  - Global.BotMovementController.steeringSensitivity
+  langs:
+  - csharp
+  - vb
+  name: BotMovementController
+  nameWithType: BotMovementController
+  fullName: BotMovementController
+  type: Class
+  source:
+    id: BotMovementController
+    path: ''
+    startLine: 912
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: 'public class BotMovementController : MonoBehaviour'
+    content.vb: >-
+      Public Class BotMovementController
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Global.BotMovementController.maxSpeed
+  commentId: F:Global.BotMovementController.maxSpeed
+  id: maxSpeed
+  parent: Global.BotMovementController
+  langs:
+  - csharp
+  - vb
+  name: maxSpeed
+  nameWithType: BotMovementController.maxSpeed
+  fullName: BotMovementController.maxSpeed
+  type: Field
+  source:
+    id: maxSpeed
+    path: ''
+    startLine: 916
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public float maxSpeed
+    return:
+      type: System.Single
+    content.vb: Public maxSpeed As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.BotMovementController.acceleration
+  commentId: F:Global.BotMovementController.acceleration
+  id: acceleration
+  parent: Global.BotMovementController
+  langs:
+  - csharp
+  - vb
+  name: acceleration
+  nameWithType: BotMovementController.acceleration
+  fullName: BotMovementController.acceleration
+  type: Field
+  source:
+    id: acceleration
+    path: ''
+    startLine: 917
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public float acceleration
+    return:
+      type: System.Single
+    content.vb: Public acceleration As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.BotMovementController.steering
+  commentId: F:Global.BotMovementController.steering
+  id: steering
+  parent: Global.BotMovementController
+  langs:
+  - csharp
+  - vb
+  name: steering
+  nameWithType: BotMovementController.steering
+  fullName: BotMovementController.steering
+  type: Field
+  source:
+    id: steering
+    path: ''
+    startLine: 918
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public float steering
+    return:
+      type: System.Single
+    content.vb: Public steering As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.BotMovementController.steeringSensitivity
+  commentId: F:Global.BotMovementController.steeringSensitivity
+  id: steeringSensitivity
+  parent: Global.BotMovementController
+  langs:
+  - csharp
+  - vb
+  name: steeringSensitivity
+  nameWithType: BotMovementController.steeringSensitivity
+  fullName: BotMovementController.steeringSensitivity
+  type: Field
+  source:
+    id: steeringSensitivity
+    path: ''
+    startLine: 919
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public float steeringSensitivity
+    return:
+      type: System.Single
+    content.vb: Public steeringSensitivity As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Global
+  name: Global
+  nameWithType: Global
+  fullName: Global
+  nameWithType.vb: ''
+  fullName.vb: ''
+  name.vb: ''
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single

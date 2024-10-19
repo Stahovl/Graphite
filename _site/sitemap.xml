@@ -1,26 +1,104 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://stahovl.github.io/Graphite/api/Global.BotMovementController.html</loc>
+    <lastmod>2024-10-18T11:58:55+05:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://stahovl.github.io/Graphite/api/Global.CameraLook.html</loc>
+    <lastmod>2024-10-18T11:58:55+05:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://stahovl.github.io/Graphite/api/Global.Car.html</loc>
+    <lastmod>2024-10-18T11:58:55+05:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://stahovl.github.io/Graphite/api/Global.CarAI.html</loc>
+    <lastmod>2024-10-18T11:58:55+05:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://stahovl.github.io/Graphite/api/Global.Control.html</loc>
+    <lastmod>2024-10-18T11:58:55+05:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://stahovl.github.io/Graphite/api/Global.HandleInput.html</loc>
-    <lastmod>2024-10-18T04:31:36+05:00</lastmod>
+    <lastmod>2024-10-18T11:58:55+05:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://stahovl.github.io/Graphite/api/Global.Helth.html</loc>
+    <lastmod>2024-10-18T11:58:55+05:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://stahovl.github.io/Graphite/api/Global.NeuralNetwork.html</loc>
+    <lastmod>2024-10-18T11:58:55+05:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://stahovl.github.io/Graphite/api/Global.Orientation.html</loc>
+    <lastmod>2024-10-18T11:58:55+05:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://stahovl.github.io/Graphite/api/Global.PlayerMove.html</loc>
+    <lastmod>2024-10-18T11:58:55+05:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://stahovl.github.io/Graphite/api/Global.PriorityObject.html</loc>
+    <lastmod>2024-10-18T11:58:55+05:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://stahovl.github.io/Graphite/api/Global.RaceBot.html</loc>
+    <lastmod>2024-10-18T11:58:55+05:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://stahovl.github.io/Graphite/api/Global.Sensor.html</loc>
+    <lastmod>2024-10-18T11:58:55+05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://stahovl.github.io/Graphite/api/Global.html</loc>
-    <lastmod>2024-10-18T04:31:36+05:00</lastmod>
+    <lastmod>2024-10-18T11:58:55+05:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>https://stahovl.github.io/Graphite/index.html</loc>
+    <lastmod>2024-10-18T11:58:55+05:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>https://stahovl.github.io/Graphite/manual/coniunctis.html</loc>
-    <lastmod>2024-10-18T04:31:36+05:00</lastmod>
+    <lastmod>2024-10-18T11:58:55+05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://stahovl.github.io/Graphite/manual/etiam.html</loc>
-    <lastmod>2024-10-18T04:31:36+05:00</lastmod>
+    <lastmod>2024-10-18T11:58:55+05:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

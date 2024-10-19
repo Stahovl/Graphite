@@ -1,0 +1,55 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.CameraLook
+  commentId: T:Global.CameraLook
+  id: CameraLook
+  parent: Global
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: CameraLook
+  nameWithType: CameraLook
+  fullName: CameraLook
+  type: Class
+  source:
+    id: CameraLook
+    path: ''
+    startLine: 4
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: 'public class CameraLook : MonoBehaviour'
+    content.vb: >-
+      Public Class CameraLook
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+references:
+- uid: Global
+  name: Global
+  nameWithType: Global
+  fullName: Global
+  nameWithType.vb: ''
+  fullName.vb: ''
+  name.vb: ''
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

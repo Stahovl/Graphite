@@ -15,7 +15,7 @@ items:
   source:
     id: HandleInput
     path: ''
-    startLine: 5
+    startLine: 786
   assemblies:
   - cs.temp.dll
   namespace: Global
@@ -42,3 +42,16 @@ references:
   nameWithType.vb: ''
   fullName.vb: ''
   name.vb: ''
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

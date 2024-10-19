@@ -1,13 +1,78 @@
 {
+  "api/Global.BotMovementController.html": {
+    "href": "api/Global.BotMovementController.html",
+    "title": "Class BotMovementController | Example Unity documentation",
+    "keywords": "Class BotMovementController Inheritance System.Object BotMovementController Namespace : Global Assembly : cs.temp.dll.dll Syntax public class BotMovementController : MonoBehaviour Fields acceleration Declaration public float acceleration Field Value Type Description System.Single maxSpeed Declaration public float maxSpeed Field Value Type Description System.Single steering Declaration public float steering Field Value Type Description System.Single steeringSensitivity Declaration public float steeringSensitivity Field Value Type Description System.Single"
+  },
+  "api/Global.CameraLook.html": {
+    "href": "api/Global.CameraLook.html",
+    "title": "Class CameraLook | Example Unity documentation",
+    "keywords": "Class CameraLook Inheritance System.Object CameraLook Namespace : Global Assembly : cs.temp.dll.dll Syntax public class CameraLook : MonoBehaviour"
+  },
+  "api/Global.Car.html": {
+    "href": "api/Global.Car.html",
+    "title": "Class Car | Example Unity documentation",
+    "keywords": "Class Car Inheritance System.Object Orientation Car Inherited Members Orientation._rb Orientation.collisionNormal Orientation.targetRotation Orientation._gravity Orientation._gravity_normal Orientation._gravity_magnitude Orientation.Gravity Orientation.RotateInAir Orientation.SlipAngle Orientation.LerpNormalGravity Orientation.FreezRotation(Boolean) Orientation.isGrounded() Namespace : Global Assembly : cs.temp.dll.dll Syntax public class Car : Orientation Fields direction Declaration public Vector3 direction Field Value Type Description Vector3 moveSpeed Declaration public float moveSpeed Field Value Type Description System.Single rotationSpeed Declaration public float rotationSpeed Field Value Type Description System.Single Methods OnUpdate() Declaration public override void OnUpdate() Overrides Orientation.OnUpdate()"
+  },
+  "api/Global.CarAI.html": {
+    "href": "api/Global.CarAI.html",
+    "title": "Class CarAI | Example Unity documentation",
+    "keywords": "Class CarAI Inheritance System.Object CarAI Namespace : Global Assembly : cs.temp.dll.dll Syntax public class CarAI : Agent Fields car Declaration public Car car Field Value Type Description Car checkpointReward Declaration public float checkpointReward Field Value Type Description System.Single collisionPenalty Declaration public float collisionPenalty Field Value Type Description System.Single nextCheckpoint Declaration public Transform nextCheckpoint Field Value Type Description Transform numRays Declaration public int numRays Field Value Type Description System.Int32 rayDistance Declaration public float rayDistance Field Value Type Description System.Single Methods CollectObservations(VectorSensor) Declaration public override void CollectObservations(VectorSensor sensor) Parameters Type Name Description VectorSensor sensor Heuristic(in ActionBuffers) Declaration public override void Heuristic(in ActionBuffers actionsOut) Parameters Type Name Description ActionBuffers actionsOut OnActionReceived(ActionBuffers) Declaration public override void OnActionReceived(ActionBuffers actions) Parameters Type Name Description ActionBuffers actions OnEpisodeBegin() Declaration public override void OnEpisodeBegin()"
+  },
+  "api/Global.Control.html": {
+    "href": "api/Global.Control.html",
+    "title": "Class Control | Example Unity documentation",
+    "keywords": "Class Control Inheritance System.Object Control Namespace : Global Assembly : cs.temp.dll.dll Syntax public class Control : MonoBehaviour Fields _gravity Declaration protected Vector3 _gravity Field Value Type Description Vector3 _gravity_magnitude Declaration protected float _gravity_magnitude Field Value Type Description System.Single _gravity_normal Declaration protected Vector3 _gravity_normal Field Value Type Description Vector3 NormalSurface Declaration protected Vector3 NormalSurface Field Value Type Description Vector3 raycastDistance Declaration public float raycastDistance Field Value Type Description System.Single rotationSpeed Declaration public float rotationSpeed Field Value Type Description System.Single surfaceCurve Declaration public float surfaceCurve Field Value Type Description System.Single targetRotationSurface Declaration protected Quaternion targetRotationSurface Field Value Type Description Quaternion Properties Gravity Declaration public Vector3 Gravity { get; set; } Property Value Type Description Vector3 Methods OnFixedUpdate() Declaration public virtual void OnFixedUpdate()"
+  },
   "api/Global.HandleInput.html": {
     "href": "api/Global.HandleInput.html",
     "title": "Class HandleInput | Example Unity documentation",
     "keywords": "Class HandleInput Class for handle player input. Inheritance System.Object HandleInput Namespace : Global Assembly : cs.temp.dll.dll Syntax public class HandleInput : MonoBehaviour"
   },
+  "api/Global.Helth.html": {
+    "href": "api/Global.Helth.html",
+    "title": "Class Helth | Example Unity documentation",
+    "keywords": "Class Helth Inheritance System.Object Helth Namespace : Global Assembly : cs.temp.dll.dll Syntax public class Helth : MonoBehaviour Fields _currentHelth Declaration protected int _currentHelth Field Value Type Description System.Int32 Methods AddHelth(Int32) Declaration public virtual void AddHelth(int value) Parameters Type Name Description System.Int32 value GetHelth() Declaration public int GetHelth() Returns Type Description System.Int32 IsAlive() Declaration public bool IsAlive() Returns Type Description System.Boolean"
+  },
   "api/Global.html": {
     "href": "api/Global.html",
     "title": "Namespace Global | Example Unity documentation",
-    "keywords": "Namespace Global Classes HandleInput Class for handle player input."
+    "keywords": "Namespace Global Classes BotMovementController CameraLook Car CarAI Control HandleInput Class for handle player input. Helth NeuralNetwork Orientation PlayerMove PriorityObject RaceBot Sensor"
+  },
+  "api/Global.NeuralNetwork.html": {
+    "href": "api/Global.NeuralNetwork.html",
+    "title": "Class NeuralNetwork | Example Unity documentation",
+    "keywords": "Class NeuralNetwork Inheritance System.Object NeuralNetwork Namespace : Global Assembly : cs.temp.dll.dll Syntax public class NeuralNetwork Constructors NeuralNetwork(Int32, Int32, Int32) Declaration public NeuralNetwork(int inputSize, int hiddenSize, int outputSize) Parameters Type Name Description System.Int32 inputSize System.Int32 hiddenSize System.Int32 outputSize Methods Forward(Single[]) Declaration public float[] Forward(float[] inputs) Parameters Type Name Description System.Single [] inputs Returns Type Description System.Single []"
+  },
+  "api/Global.Orientation.html": {
+    "href": "api/Global.Orientation.html",
+    "title": "Class Orientation | Example Unity documentation",
+    "keywords": "Class Orientation Inheritance System.Object Orientation Car PlayerMove RaceBot Namespace : Global Assembly : cs.temp.dll.dll Syntax public class Orientation : MonoBehaviour Fields _gravity Declaration protected Vector3 _gravity Field Value Type Description Vector3 _gravity_magnitude Declaration protected float _gravity_magnitude Field Value Type Description System.Single _gravity_normal Declaration protected Vector3 _gravity_normal Field Value Type Description Vector3 _rb Declaration protected Rigidbody _rb Field Value Type Description Rigidbody collisionNormal Declaration protected Vector3 collisionNormal Field Value Type Description Vector3 LerpNormalGravity Declaration public float LerpNormalGravity Field Value Type Description System.Single RotateInAir Declaration public bool RotateInAir Field Value Type Description System.Boolean SlipAngle Declaration public float SlipAngle Field Value Type Description System.Single targetRotation �������� �����������(������� �����������) Declaration protected Quaternion targetRotation Field Value Type Description Quaternion Properties Gravity Declaration public Vector3 Gravity { get; set; } Property Value Type Description Vector3 Methods FreezRotation(Boolean) Declaration protected void FreezRotation(bool value) Parameters Type Name Description System.Boolean value isGrounded() Declaration public bool isGrounded() Returns Type Description System.Boolean OnUpdate() Declaration public virtual void OnUpdate()"
+  },
+  "api/Global.PlayerMove.html": {
+    "href": "api/Global.PlayerMove.html",
+    "title": "Class PlayerMove | Example Unity documentation",
+    "keywords": "Class PlayerMove Inheritance System.Object Orientation PlayerMove Inherited Members Orientation._rb Orientation.collisionNormal Orientation.targetRotation Orientation._gravity Orientation._gravity_normal Orientation._gravity_magnitude Orientation.Gravity Orientation.RotateInAir Orientation.SlipAngle Orientation.LerpNormalGravity Orientation.FreezRotation(Boolean) Orientation.isGrounded() Namespace : Global Assembly : cs.temp.dll.dll Syntax public class PlayerMove : Orientation Fields jumpHeight Declaration public float jumpHeight Field Value Type Description System.Single moveSpeed Declaration public float moveSpeed Field Value Type Description System.Single Methods OnUpdate() Declaration public override void OnUpdate() Overrides Orientation.OnUpdate()"
+  },
+  "api/Global.PriorityObject.html": {
+    "href": "api/Global.PriorityObject.html",
+    "title": "Class PriorityObject | Example Unity documentation",
+    "keywords": "Class PriorityObject Inheritance System.Object PriorityObject Namespace : Global Assembly : cs.temp.dll.dll Syntax public class PriorityObject : MonoBehaviour Fields priority Declaration public float priority Field Value Type Description System.Single"
+  },
+  "api/Global.RaceBot.html": {
+    "href": "api/Global.RaceBot.html",
+    "title": "Class RaceBot | Example Unity documentation",
+    "keywords": "Class RaceBot Inheritance System.Object Orientation RaceBot Inherited Members Orientation._rb Orientation.collisionNormal Orientation.targetRotation Orientation._gravity Orientation._gravity_normal Orientation._gravity_magnitude Orientation.Gravity Orientation.RotateInAir Orientation.SlipAngle Orientation.LerpNormalGravity Orientation.FreezRotation(Boolean) Orientation.isGrounded() Namespace : Global Assembly : cs.temp.dll.dll Syntax public class RaceBot : Orientation Fields acceleration Declaration public float acceleration Field Value Type Description System.Single checkpointReachedDistance Declaration public float checkpointReachedDistance Field Value Type Description System.Single checkpoints Declaration public Transform[] checkpoints Field Value Type Description Transform [] maxSpeed Declaration public float maxSpeed Field Value Type Description System.Single obstacleAvoidanceStrength Declaration public float obstacleAvoidanceStrength Field Value Type Description System.Single obstacleDetectionDistance Declaration public float obstacleDetectionDistance Field Value Type Description System.Single steeringSpeed Declaration public float steeringSpeed Field Value Type Description System.Single Methods AdjustDifficulty(Single) Declaration public void AdjustDifficulty(float difficultyFactor) Parameters Type Name Description System.Single difficultyFactor OnUpdate() Declaration public override void OnUpdate() Overrides Orientation.OnUpdate()"
+  },
+  "api/Global.Sensor.html": {
+    "href": "api/Global.Sensor.html",
+    "title": "Class Sensor | Example Unity documentation",
+    "keywords": "Class Sensor Inheritance System.Object Sensor Namespace : Global Assembly : cs.temp.dll.dll Syntax public class Sensor : MonoBehaviour Fields frontSensorAngle Declaration public float frontSensorAngle Field Value Type Description System.Single sensorCount Declaration public int sensorCount Field Value Type Description System.Int32 sensorLength Declaration public float sensorLength Field Value Type Description System.Single Methods GetSensorData() Declaration public float[] GetSensorData() Returns Type Description System.Single []"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "| Example Unity documentation",
+    "keywords": "Documentation: https://github.com/Stahovl/Graphite"
   },
   "manual/coniunctis.html": {
     "href": "manual/coniunctis.html",

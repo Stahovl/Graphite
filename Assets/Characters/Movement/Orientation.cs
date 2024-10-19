@@ -8,7 +8,10 @@ public class Orientation : MonoBehaviour
     private Dictionary<Collider, List<Vector3>> collisionNormals = new Dictionary<Collider, List<Vector3>>();
     protected Rigidbody _rb;
     protected Vector3 collisionNormal;
-    protected Quaternion targetRotation;
+    /// <summary>
+    ///  ривизна поверхности(нормаль поверхности)
+    /// </summary>
+    protected Quaternion targetRotation; 
 
 
 

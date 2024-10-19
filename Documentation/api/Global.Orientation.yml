@@ -1,0 +1,483 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Orientation
+  commentId: T:Global.Orientation
+  id: Orientation
+  parent: Global
+  children:
+  - Global.Orientation._gravity
+  - Global.Orientation._gravity_magnitude
+  - Global.Orientation._gravity_normal
+  - Global.Orientation._rb
+  - Global.Orientation.collisionNormal
+  - Global.Orientation.FreezRotation(System.Boolean)
+  - Global.Orientation.Gravity
+  - Global.Orientation.isGrounded
+  - Global.Orientation.LerpNormalGravity
+  - Global.Orientation.OnUpdate
+  - Global.Orientation.RotateInAir
+  - Global.Orientation.SlipAngle
+  - Global.Orientation.targetRotation
+  langs:
+  - csharp
+  - vb
+  name: Orientation
+  nameWithType: Orientation
+  fullName: Orientation
+  type: Class
+  source:
+    id: Orientation
+    path: ''
+    startLine: 573
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: 'public class Orientation : MonoBehaviour'
+    content.vb: >-
+      Public Class Orientation
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Global.Car
+  - Global.PlayerMove
+  - Global.RaceBot
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Global.Orientation._rb
+  commentId: F:Global.Orientation._rb
+  id: _rb
+  parent: Global.Orientation
+  langs:
+  - csharp
+  - vb
+  name: _rb
+  nameWithType: Orientation._rb
+  fullName: Orientation._rb
+  type: Field
+  source:
+    id: _rb
+    path: ''
+    startLine: 577
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: protected Rigidbody _rb
+    return:
+      type: Global.Rigidbody
+    content.vb: Protected _rb As Rigidbody
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Global.Orientation.collisionNormal
+  commentId: F:Global.Orientation.collisionNormal
+  id: collisionNormal
+  parent: Global.Orientation
+  langs:
+  - csharp
+  - vb
+  name: collisionNormal
+  nameWithType: Orientation.collisionNormal
+  fullName: Orientation.collisionNormal
+  type: Field
+  source:
+    id: collisionNormal
+    path: ''
+    startLine: 578
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: protected Vector3 collisionNormal
+    return:
+      type: Global.Vector3
+    content.vb: Protected collisionNormal As Vector3
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Global.Orientation.targetRotation
+  commentId: F:Global.Orientation.targetRotation
+  id: targetRotation
+  parent: Global.Orientation
+  langs:
+  - csharp
+  - vb
+  name: targetRotation
+  nameWithType: Orientation.targetRotation
+  fullName: Orientation.targetRotation
+  type: Field
+  source:
+    id: targetRotation
+    path: ''
+    startLine: 582
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  summary: "\n�������� �����������(������� �����������)\n"
+  example: []
+  syntax:
+    content: protected Quaternion targetRotation
+    return:
+      type: Global.Quaternion
+    content.vb: Protected targetRotation As Quaternion
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Global.Orientation._gravity
+  commentId: F:Global.Orientation._gravity
+  id: _gravity
+  parent: Global.Orientation
+  langs:
+  - csharp
+  - vb
+  name: _gravity
+  nameWithType: Orientation._gravity
+  fullName: Orientation._gravity
+  type: Field
+  source:
+    id: _gravity
+    path: ''
+    startLine: 586
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: protected Vector3 _gravity
+    return:
+      type: Global.Vector3
+    content.vb: Protected _gravity As Vector3
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Global.Orientation._gravity_normal
+  commentId: F:Global.Orientation._gravity_normal
+  id: _gravity_normal
+  parent: Global.Orientation
+  langs:
+  - csharp
+  - vb
+  name: _gravity_normal
+  nameWithType: Orientation._gravity_normal
+  fullName: Orientation._gravity_normal
+  type: Field
+  source:
+    id: _gravity_normal
+    path: ''
+    startLine: 587
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: protected Vector3 _gravity_normal
+    return:
+      type: Global.Vector3
+    content.vb: Protected _gravity_normal As Vector3
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Global.Orientation._gravity_magnitude
+  commentId: F:Global.Orientation._gravity_magnitude
+  id: _gravity_magnitude
+  parent: Global.Orientation
+  langs:
+  - csharp
+  - vb
+  name: _gravity_magnitude
+  nameWithType: Orientation._gravity_magnitude
+  fullName: Orientation._gravity_magnitude
+  type: Field
+  source:
+    id: _gravity_magnitude
+    path: ''
+    startLine: 588
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: protected float _gravity_magnitude
+    return:
+      type: System.Single
+    content.vb: Protected _gravity_magnitude As Single
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Global.Orientation.Gravity
+  commentId: P:Global.Orientation.Gravity
+  id: Gravity
+  parent: Global.Orientation
+  langs:
+  - csharp
+  - vb
+  name: Gravity
+  nameWithType: Orientation.Gravity
+  fullName: Orientation.Gravity
+  type: Property
+  source:
+    id: Gravity
+    path: ''
+    startLine: 589
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public Vector3 Gravity { get; set; }
+    parameters: []
+    return:
+      type: Global.Vector3
+    content.vb: Public Property Gravity As Vector3
+  overload: Global.Orientation.Gravity*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Global.Orientation.RotateInAir
+  commentId: F:Global.Orientation.RotateInAir
+  id: RotateInAir
+  parent: Global.Orientation
+  langs:
+  - csharp
+  - vb
+  name: RotateInAir
+  nameWithType: Orientation.RotateInAir
+  fullName: Orientation.RotateInAir
+  type: Field
+  source:
+    id: RotateInAir
+    path: ''
+    startLine: 598
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public bool RotateInAir
+    return:
+      type: System.Boolean
+    content.vb: Public RotateInAir As Boolean
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Orientation.SlipAngle
+  commentId: F:Global.Orientation.SlipAngle
+  id: SlipAngle
+  parent: Global.Orientation
+  langs:
+  - csharp
+  - vb
+  name: SlipAngle
+  nameWithType: Orientation.SlipAngle
+  fullName: Orientation.SlipAngle
+  type: Field
+  source:
+    id: SlipAngle
+    path: ''
+    startLine: 599
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public float SlipAngle
+    return:
+      type: System.Single
+    content.vb: Public SlipAngle As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Orientation.LerpNormalGravity
+  commentId: F:Global.Orientation.LerpNormalGravity
+  id: LerpNormalGravity
+  parent: Global.Orientation
+  langs:
+  - csharp
+  - vb
+  name: LerpNormalGravity
+  nameWithType: Orientation.LerpNormalGravity
+  fullName: Orientation.LerpNormalGravity
+  type: Field
+  source:
+    id: LerpNormalGravity
+    path: ''
+    startLine: 600
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public float LerpNormalGravity
+    return:
+      type: System.Single
+    content.vb: Public LerpNormalGravity As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Orientation.FreezRotation(System.Boolean)
+  commentId: M:Global.Orientation.FreezRotation(System.Boolean)
+  id: FreezRotation(System.Boolean)
+  parent: Global.Orientation
+  langs:
+  - csharp
+  - vb
+  name: FreezRotation(Boolean)
+  nameWithType: Orientation.FreezRotation(Boolean)
+  fullName: Orientation.FreezRotation(System.Boolean)
+  type: Method
+  source:
+    id: FreezRotation
+    path: ''
+    startLine: 609
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: protected void FreezRotation(bool value)
+    parameters:
+    - id: value
+      type: System.Boolean
+    content.vb: Protected Sub FreezRotation(value As Boolean)
+  overload: Global.Orientation.FreezRotation*
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Global.Orientation.OnUpdate
+  commentId: M:Global.Orientation.OnUpdate
+  id: OnUpdate
+  parent: Global.Orientation
+  langs:
+  - csharp
+  - vb
+  name: OnUpdate()
+  nameWithType: Orientation.OnUpdate()
+  fullName: Orientation.OnUpdate()
+  type: Method
+  source:
+    id: OnUpdate
+    path: ''
+    startLine: 629
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public virtual void OnUpdate()
+    content.vb: Public Overridable Sub OnUpdate
+  overload: Global.Orientation.OnUpdate*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Global.Orientation.isGrounded
+  commentId: M:Global.Orientation.isGrounded
+  id: isGrounded
+  parent: Global.Orientation
+  langs:
+  - csharp
+  - vb
+  name: isGrounded()
+  nameWithType: Orientation.isGrounded()
+  fullName: Orientation.isGrounded()
+  type: Method
+  source:
+    id: isGrounded
+    path: ''
+    startLine: 651
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public bool isGrounded()
+    return:
+      type: System.Boolean
+    content.vb: Public Function isGrounded As Boolean
+  overload: Global.Orientation.isGrounded*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Global
+  name: Global
+  nameWithType: Global
+  fullName: Global
+  nameWithType.vb: ''
+  fullName.vb: ''
+  name.vb: ''
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Global.Rigidbody
+  commentId: '!:Global.Rigidbody'
+  isExternal: true
+  name: Rigidbody
+  nameWithType: Rigidbody
+  fullName: Rigidbody
+- uid: Global.Vector3
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: Vector3
+- uid: Global.Quaternion
+  isExternal: true
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: Quaternion
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Global.Orientation.Gravity*
+  commentId: Overload:Global.Orientation.Gravity
+  name: Gravity
+  nameWithType: Orientation.Gravity
+  fullName: Orientation.Gravity
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Global.Orientation.FreezRotation*
+  commentId: Overload:Global.Orientation.FreezRotation
+  name: FreezRotation
+  nameWithType: Orientation.FreezRotation
+  fullName: Orientation.FreezRotation
+- uid: Global.Orientation.OnUpdate*
+  commentId: Overload:Global.Orientation.OnUpdate
+  name: OnUpdate
+  nameWithType: Orientation.OnUpdate
+  fullName: Orientation.OnUpdate
+- uid: Global.Orientation.isGrounded*
+  commentId: Overload:Global.Orientation.isGrounded
+  name: isGrounded
+  nameWithType: Orientation.isGrounded
+  fullName: Orientation.isGrounded

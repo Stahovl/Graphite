@@ -1,0 +1,213 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Sensor
+  commentId: T:Global.Sensor
+  id: Sensor
+  parent: Global
+  children:
+  - Global.Sensor.frontSensorAngle
+  - Global.Sensor.GetSensorData
+  - Global.Sensor.sensorCount
+  - Global.Sensor.sensorLength
+  langs:
+  - csharp
+  - vb
+  name: Sensor
+  nameWithType: Sensor
+  fullName: Sensor
+  type: Class
+  source:
+    id: Sensor
+    path: ''
+    startLine: 967
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: 'public class Sensor : MonoBehaviour'
+    content.vb: >-
+      Public Class Sensor
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Global.Sensor.sensorLength
+  commentId: F:Global.Sensor.sensorLength
+  id: sensorLength
+  parent: Global.Sensor
+  langs:
+  - csharp
+  - vb
+  name: sensorLength
+  nameWithType: Sensor.sensorLength
+  fullName: Sensor.sensorLength
+  type: Field
+  source:
+    id: sensorLength
+    path: ''
+    startLine: 969
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public float sensorLength
+    return:
+      type: System.Single
+    content.vb: Public sensorLength As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Sensor.frontSensorAngle
+  commentId: F:Global.Sensor.frontSensorAngle
+  id: frontSensorAngle
+  parent: Global.Sensor
+  langs:
+  - csharp
+  - vb
+  name: frontSensorAngle
+  nameWithType: Sensor.frontSensorAngle
+  fullName: Sensor.frontSensorAngle
+  type: Field
+  source:
+    id: frontSensorAngle
+    path: ''
+    startLine: 970
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public float frontSensorAngle
+    return:
+      type: System.Single
+    content.vb: Public frontSensorAngle As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Sensor.sensorCount
+  commentId: F:Global.Sensor.sensorCount
+  id: sensorCount
+  parent: Global.Sensor
+  langs:
+  - csharp
+  - vb
+  name: sensorCount
+  nameWithType: Sensor.sensorCount
+  fullName: Sensor.sensorCount
+  type: Field
+  source:
+    id: sensorCount
+    path: ''
+    startLine: 971
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public int sensorCount
+    return:
+      type: System.Int32
+    content.vb: Public sensorCount As Integer
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Sensor.GetSensorData
+  commentId: M:Global.Sensor.GetSensorData
+  id: GetSensorData
+  parent: Global.Sensor
+  langs:
+  - csharp
+  - vb
+  name: GetSensorData()
+  nameWithType: Sensor.GetSensorData()
+  fullName: Sensor.GetSensorData()
+  type: Method
+  source:
+    id: GetSensorData
+    path: ''
+    startLine: 1002
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public float[] GetSensorData()
+    return:
+      type: System.Single[]
+    content.vb: Public Function GetSensorData As Single()
+  overload: Global.Sensor.GetSensorData*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Global
+  name: Global
+  nameWithType: Global
+  fullName: Global
+  nameWithType.vb: ''
+  fullName.vb: ''
+  name.vb: ''
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Global.Sensor.GetSensorData*
+  commentId: Overload:Global.Sensor.GetSensorData
+  name: GetSensorData
+  nameWithType: Sensor.GetSensorData
+  fullName: Sensor.GetSensorData
+- uid: System.Single[]
+  isExternal: true
+  name: Single[]
+  nameWithType: Single[]
+  fullName: System.Single[]
+  nameWithType.vb: Single()
+  fullName.vb: System.Single()
+  name.vb: Single()
+  spec.csharp:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: '[]'
+    nameWithType: '[]'
+    fullName: '[]'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    nameWithType: Single
+    fullName: System.Single
+    isExternal: true
+  - name: ()
+    nameWithType: ()
+    fullName: ()

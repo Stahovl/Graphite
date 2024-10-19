@@ -1,0 +1,90 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.PriorityObject
+  commentId: T:Global.PriorityObject
+  id: PriorityObject
+  parent: Global
+  children:
+  - Global.PriorityObject.priority
+  langs:
+  - csharp
+  - vb
+  name: PriorityObject
+  nameWithType: PriorityObject
+  fullName: PriorityObject
+  type: Class
+  source:
+    id: PriorityObject
+    path: ''
+    startLine: 70
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: 'public class PriorityObject : MonoBehaviour'
+    content.vb: >-
+      Public Class PriorityObject
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Global.PriorityObject.priority
+  commentId: F:Global.PriorityObject.priority
+  id: priority
+  parent: Global.PriorityObject
+  langs:
+  - csharp
+  - vb
+  name: priority
+  nameWithType: PriorityObject.priority
+  fullName: PriorityObject.priority
+  type: Field
+  source:
+    id: priority
+    path: ''
+    startLine: 73
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public float priority
+    return:
+      type: System.Single
+    content.vb: Public priority As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Global
+  name: Global
+  nameWithType: Global
+  fullName: Global
+  nameWithType.vb: ''
+  fullName.vb: ''
+  name.vb: ''
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single

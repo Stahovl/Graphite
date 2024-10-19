@@ -1,0 +1,367 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Control
+  commentId: T:Global.Control
+  id: Control
+  parent: Global
+  children:
+  - Global.Control._gravity
+  - Global.Control._gravity_magnitude
+  - Global.Control._gravity_normal
+  - Global.Control.Gravity
+  - Global.Control.NormalSurface
+  - Global.Control.OnFixedUpdate
+  - Global.Control.raycastDistance
+  - Global.Control.rotationSpeed
+  - Global.Control.surfaceCurve
+  - Global.Control.targetRotationSurface
+  langs:
+  - csharp
+  - vb
+  name: Control
+  nameWithType: Control
+  fullName: Control
+  type: Class
+  source:
+    id: Control
+    path: ''
+    startLine: 402
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: 'public class Control : MonoBehaviour'
+    content.vb: >-
+      Public Class Control
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Global.Control.raycastDistance
+  commentId: F:Global.Control.raycastDistance
+  id: raycastDistance
+  parent: Global.Control
+  langs:
+  - csharp
+  - vb
+  name: raycastDistance
+  nameWithType: Control.raycastDistance
+  fullName: Control.raycastDistance
+  type: Field
+  source:
+    id: raycastDistance
+    path: ''
+    startLine: 410
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public float raycastDistance
+    return:
+      type: System.Single
+    content.vb: Public raycastDistance As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Control.rotationSpeed
+  commentId: F:Global.Control.rotationSpeed
+  id: rotationSpeed
+  parent: Global.Control
+  langs:
+  - csharp
+  - vb
+  name: rotationSpeed
+  nameWithType: Control.rotationSpeed
+  fullName: Control.rotationSpeed
+  type: Field
+  source:
+    id: rotationSpeed
+    path: ''
+    startLine: 411
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public float rotationSpeed
+    return:
+      type: System.Single
+    content.vb: Public rotationSpeed As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Control.surfaceCurve
+  commentId: F:Global.Control.surfaceCurve
+  id: surfaceCurve
+  parent: Global.Control
+  langs:
+  - csharp
+  - vb
+  name: surfaceCurve
+  nameWithType: Control.surfaceCurve
+  fullName: Control.surfaceCurve
+  type: Field
+  source:
+    id: surfaceCurve
+    path: ''
+    startLine: 412
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public float surfaceCurve
+    return:
+      type: System.Single
+    content.vb: Public surfaceCurve As Single
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Control.NormalSurface
+  commentId: F:Global.Control.NormalSurface
+  id: NormalSurface
+  parent: Global.Control
+  langs:
+  - csharp
+  - vb
+  name: NormalSurface
+  nameWithType: Control.NormalSurface
+  fullName: Control.NormalSurface
+  type: Field
+  source:
+    id: NormalSurface
+    path: ''
+    startLine: 414
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: protected Vector3 NormalSurface
+    return:
+      type: Global.Vector3
+    content.vb: Protected NormalSurface As Vector3
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Global.Control.targetRotationSurface
+  commentId: F:Global.Control.targetRotationSurface
+  id: targetRotationSurface
+  parent: Global.Control
+  langs:
+  - csharp
+  - vb
+  name: targetRotationSurface
+  nameWithType: Control.targetRotationSurface
+  fullName: Control.targetRotationSurface
+  type: Field
+  source:
+    id: targetRotationSurface
+    path: ''
+    startLine: 415
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: protected Quaternion targetRotationSurface
+    return:
+      type: Global.Quaternion
+    content.vb: Protected targetRotationSurface As Quaternion
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Global.Control._gravity
+  commentId: F:Global.Control._gravity
+  id: _gravity
+  parent: Global.Control
+  langs:
+  - csharp
+  - vb
+  name: _gravity
+  nameWithType: Control._gravity
+  fullName: Control._gravity
+  type: Field
+  source:
+    id: _gravity
+    path: ''
+    startLine: 417
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: protected Vector3 _gravity
+    return:
+      type: Global.Vector3
+    content.vb: Protected _gravity As Vector3
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Global.Control._gravity_normal
+  commentId: F:Global.Control._gravity_normal
+  id: _gravity_normal
+  parent: Global.Control
+  langs:
+  - csharp
+  - vb
+  name: _gravity_normal
+  nameWithType: Control._gravity_normal
+  fullName: Control._gravity_normal
+  type: Field
+  source:
+    id: _gravity_normal
+    path: ''
+    startLine: 418
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: protected Vector3 _gravity_normal
+    return:
+      type: Global.Vector3
+    content.vb: Protected _gravity_normal As Vector3
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Global.Control._gravity_magnitude
+  commentId: F:Global.Control._gravity_magnitude
+  id: _gravity_magnitude
+  parent: Global.Control
+  langs:
+  - csharp
+  - vb
+  name: _gravity_magnitude
+  nameWithType: Control._gravity_magnitude
+  fullName: Control._gravity_magnitude
+  type: Field
+  source:
+    id: _gravity_magnitude
+    path: ''
+    startLine: 419
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: protected float _gravity_magnitude
+    return:
+      type: System.Single
+    content.vb: Protected _gravity_magnitude As Single
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Global.Control.Gravity
+  commentId: P:Global.Control.Gravity
+  id: Gravity
+  parent: Global.Control
+  langs:
+  - csharp
+  - vb
+  name: Gravity
+  nameWithType: Control.Gravity
+  fullName: Control.Gravity
+  type: Property
+  source:
+    id: Gravity
+    path: ''
+    startLine: 420
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public Vector3 Gravity { get; set; }
+    parameters: []
+    return:
+      type: Global.Vector3
+    content.vb: Public Property Gravity As Vector3
+  overload: Global.Control.Gravity*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
+- uid: Global.Control.OnFixedUpdate
+  commentId: M:Global.Control.OnFixedUpdate
+  id: OnFixedUpdate
+  parent: Global.Control
+  langs:
+  - csharp
+  - vb
+  name: OnFixedUpdate()
+  nameWithType: Control.OnFixedUpdate()
+  fullName: Control.OnFixedUpdate()
+  type: Method
+  source:
+    id: OnFixedUpdate
+    path: ''
+    startLine: 563
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public virtual void OnFixedUpdate()
+    content.vb: Public Overridable Sub OnFixedUpdate
+  overload: Global.Control.OnFixedUpdate*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+references:
+- uid: Global
+  name: Global
+  nameWithType: Global
+  fullName: Global
+  nameWithType.vb: ''
+  fullName.vb: ''
+  name.vb: ''
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: Single
+  nameWithType: Single
+  fullName: System.Single
+- uid: Global.Vector3
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: Vector3
+- uid: Global.Quaternion
+  isExternal: true
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: Quaternion
+- uid: Global.Control.Gravity*
+  commentId: Overload:Global.Control.Gravity
+  name: Gravity
+  nameWithType: Control.Gravity
+  fullName: Control.Gravity
+- uid: Global.Control.OnFixedUpdate*
+  commentId: Overload:Global.Control.OnFixedUpdate
+  name: OnFixedUpdate
+  nameWithType: Control.OnFixedUpdate
+  fullName: Control.OnFixedUpdate

@@ -1,0 +1,202 @@
+### YamlMime:ManagedReference
+items:
+- uid: Global.Helth
+  commentId: T:Global.Helth
+  id: Helth
+  parent: Global
+  children:
+  - Global.Helth._currentHelth
+  - Global.Helth.AddHelth(System.Int32)
+  - Global.Helth.GetHelth
+  - Global.Helth.IsAlive
+  langs:
+  - csharp
+  - vb
+  name: Helth
+  nameWithType: Helth
+  fullName: Helth
+  type: Class
+  source:
+    id: Helth
+    path: ''
+    startLine: 266
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: 'public class Helth : MonoBehaviour'
+    content.vb: >-
+      Public Class Helth
+          Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
+- uid: Global.Helth._currentHelth
+  commentId: F:Global.Helth._currentHelth
+  id: _currentHelth
+  parent: Global.Helth
+  langs:
+  - csharp
+  - vb
+  name: _currentHelth
+  nameWithType: Helth._currentHelth
+  fullName: Helth._currentHelth
+  type: Field
+  source:
+    id: _currentHelth
+    path: ''
+    startLine: 268
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: protected int _currentHelth
+    return:
+      type: System.Int32
+    content.vb: Protected _currentHelth As Integer
+  modifiers.csharp:
+  - protected
+  modifiers.vb:
+  - Protected
+- uid: Global.Helth.IsAlive
+  commentId: M:Global.Helth.IsAlive
+  id: IsAlive
+  parent: Global.Helth
+  langs:
+  - csharp
+  - vb
+  name: IsAlive()
+  nameWithType: Helth.IsAlive()
+  fullName: Helth.IsAlive()
+  type: Method
+  source:
+    id: IsAlive
+    path: ''
+    startLine: 270
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public bool IsAlive()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsAlive As Boolean
+  overload: Global.Helth.IsAlive*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+- uid: Global.Helth.AddHelth(System.Int32)
+  commentId: M:Global.Helth.AddHelth(System.Int32)
+  id: AddHelth(System.Int32)
+  parent: Global.Helth
+  langs:
+  - csharp
+  - vb
+  name: AddHelth(Int32)
+  nameWithType: Helth.AddHelth(Int32)
+  fullName: Helth.AddHelth(System.Int32)
+  type: Method
+  source:
+    id: AddHelth
+    path: ''
+    startLine: 274
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public virtual void AddHelth(int value)
+    parameters:
+    - id: value
+      type: System.Int32
+    content.vb: Public Overridable Sub AddHelth(value As Integer)
+  overload: Global.Helth.AddHelth*
+  modifiers.csharp:
+  - public
+  - virtual
+  modifiers.vb:
+  - Public
+  - Overridable
+- uid: Global.Helth.GetHelth
+  commentId: M:Global.Helth.GetHelth
+  id: GetHelth
+  parent: Global.Helth
+  langs:
+  - csharp
+  - vb
+  name: GetHelth()
+  nameWithType: Helth.GetHelth()
+  fullName: Helth.GetHelth()
+  type: Method
+  source:
+    id: GetHelth
+    path: ''
+    startLine: 278
+  assemblies:
+  - cs.temp.dll
+  namespace: Global
+  syntax:
+    content: public int GetHelth()
+    return:
+      type: System.Int32
+    content.vb: Public Function GetHelth As Integer
+  overload: Global.Helth.GetHelth*
+  modifiers.csharp:
+  - public
+  modifiers.vb:
+  - Public
+references:
+- uid: Global
+  name: Global
+  nameWithType: Global
+  fullName: Global
+  nameWithType.vb: ''
+  fullName.vb: ''
+  name.vb: ''
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32
+- uid: Global.Helth.IsAlive*
+  commentId: Overload:Global.Helth.IsAlive
+  name: IsAlive
+  nameWithType: Helth.IsAlive
+  fullName: Helth.IsAlive
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Global.Helth.AddHelth*
+  commentId: Overload:Global.Helth.AddHelth
+  name: AddHelth
+  nameWithType: Helth.AddHelth
+  fullName: Helth.AddHelth
+- uid: Global.Helth.GetHelth*
+  commentId: Overload:Global.Helth.GetHelth
+  name: GetHelth
+  nameWithType: Helth.GetHelth
+  fullName: Helth.GetHelth
