@@ -1,6 +1,9 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 
+/// <summary>
+///  ласс ответственный за логику ботов
+/// </summary>
 public class CarAI : MonoBehaviour
 {
     public Car _car; // —сылка на скрипт управлени€ машинкой
