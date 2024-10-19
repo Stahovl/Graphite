@@ -3,6 +3,7 @@
 [RequireComponent(typeof(Rigidbody))]
 public class Car : Orientation
 {
+
     [Header("Parameters")]
     [SerializeField] private float _baseMoveSpeed = 30f; // Базовая скорость движения
     [SerializeField] private float _baseRotationSpeed = 1.5f; // Базовая скорость поворота
@@ -16,7 +17,11 @@ public class Car : Orientation
     {
         Gravity = new Vector3(0, -20, 0);
     }
-
+    
+    /// <summary>
+    /// Метод для переключения моделей на машинки или кубы при необходимости в более объективной производительности алгоритма
+    /// </summary>
+    /// <param name="showCarModel"></param>
     public void SetModelVisibility(bool showCarModel)
     {
         if (_carModel != null && _debugCube != null)

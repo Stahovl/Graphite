@@ -22,10 +22,13 @@ public class CarAI : MonoBehaviour
         _car = GetComponent<Car>();
     }
 
+    /// <summary>
+    /// Метод движения машины где _car.direction.z отвечает за движение вперед/назад, а _car.direction.x отвечает за поворот
+    /// </summary>
+    /// <param name="moveInput"></param>
+    /// <param name="turnInput"></param>
     private void Move(float moveInput, float turnInput)
     {
-        // _car.direction.z отвечает за движение вперед/назад
-        // а _car.direction.x отвечает за поворот
         _car.Direction.z = moveInput;
         _car.Direction.x = turnInput;
     }
@@ -104,6 +107,11 @@ public class CarAI : MonoBehaviour
         Move(Random.Range(0.9f, 1f) + _accelerate, Mathf.Clamp(turnInput, -1f, 1f));
     }
 
+    /// <summary>
+    /// Устанавливаем параметры для регулирования сложности ботов, на основе количества лучей и параметра ответственного за обгон
+    /// чем выше сложность тем больше боты стараются обгонять и лучше отслеживают препятствия
+    /// </summary>
+    /// <param name="difficult"></param>
     public void SetDifficulty(int difficult)
     {
         switch (difficult)
